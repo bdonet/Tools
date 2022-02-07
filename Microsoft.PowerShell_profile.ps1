@@ -30,6 +30,7 @@ Function gbet {pushd C:\inetpub\wwwroot; C:\"Program Files"\Git\git-bash.exe; po
 
 # Open the powershell profile in notepad
 Function prof {code C:\Users\bend\Documents\Tools\Microsoft.PowerShell_profile.ps1}
+Function updateprof {Copy-Item "C:\Users\bend\Documents\Tools\Microsoft.PowerShell_profile.ps1" -Destination "C:\Users\bend\Documents\WindowsPowerShell"}
 
 # Force push to the current branch with lease using git
 Function fp {git push --force-with-lease}
