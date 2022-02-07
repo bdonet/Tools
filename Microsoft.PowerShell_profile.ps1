@@ -12,9 +12,6 @@ Function bet {cd C:\inetpub\wwwroot}
 Function jcs {cd C:\jobcosting}
 Function tools {cd C:\Users\bend\Documents\Tools}
 
-# Clear the console
-Set-Alias -Name c -Value clear
-
 # Open the powershell profile in notepad
 Function prof {code C:\Users\bend\Documents\Tools\Microsoft.PowerShell_profile.ps1}
 Function updateprof {Copy-Item "C:\Users\bend\Documents\Tools\Microsoft.PowerShell_profile.ps1" -Destination "C:\Users\bend\Documents\WindowsPowerShell"}
