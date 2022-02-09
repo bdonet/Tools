@@ -9,6 +9,9 @@ Set-Alias -Name bmigrate -Value C:\Utilities\DevUtilityDotNetCore\LocalMigration
 Function jmigrate {pushd C:\jobcosting\JobCosting.Persistence; dotnet ef database update; popd}
 
 # Directory shortcuts
+Set-Alias -Name betenbough -Value C:\inetpub\wwwroot
+Set-Alias -Name jobcosting -Value C:\jobcosting
+Set-Alias -Name personaltools -Value C:\Users\bend\Documents\Tools
 Function bet {cd C:\inetpub\wwwroot}
 Function jcs {cd C:\jobcosting}
 Function tools {cd C:\Users\bend\Documents\Tools}
@@ -25,11 +28,22 @@ Function plog($modifier) {git log --graph --pretty='format:%n %an %ad %C(auto)%d
 Function log {git log --pretty='format:%n %an %ad %C(auto)%d %n %Creset%<(149,trunc)%s'}
 
 # Improve the git experience in powershell
+Function colorGit ($location) {
+pushd $location
+git config color.status.branch "yellow bold"
+git config color.status.nobranch "magenta bold"
+git config color.status.unmerged "red bold"
+git config color.status.added "green bold"
+git config color.status.changed "red bold"
+git config color.status.untracked "red bold"
+popd
+}
+
 Import-Module posh-git
-$global:GitPromptSettings.LocalWorkingStatusSymbol.ForegroundColor = [ConsoleColor]::Red
-$global:GitPromptSettings.WorkingColor.ForegroundColor = [ConsoleColor]::Red
-$global:GitPromptSettings.IndexColor.ForegroundColor = [ConsoleColor]::Green
-Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
-Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
 Import-Module oh-my-posh
 Set-PoshPrompt -Theme atomic
+colorGit C:\inetpub\wwwroot
+colorGit C:\jobcosting
+colorGit C:\Users\bend\Documents\Tools
+Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
+Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
