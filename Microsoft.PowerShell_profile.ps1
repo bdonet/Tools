@@ -27,6 +27,8 @@ Function push {git push}
 Function plog($modifier) {git log --graph --pretty='format:%n %an %ad %C(auto)%d %n %Creset%<(135,trunc)%s' $modifier}
 Function log {git log --pretty='format:%n %an %ad %C(auto)%d %n %Creset%<(149,trunc)%s'}
 
+Function csb {rm ./Message.xml; rm ./Properties.xml}
+
 # Improve the git experience in powershell
 Function colorGit ($location) {
 pushd $location
@@ -38,7 +40,6 @@ git config color.status.changed "red bold"
 git config color.status.untracked "red bold"
 popd
 }
-
 Import-Module posh-git
 Import-Module oh-my-posh
 Set-PoshPrompt -Theme atomic
