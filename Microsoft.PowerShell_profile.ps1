@@ -36,7 +36,7 @@ Function buildall
 # Helpful git shortcuts
 Function fp {git push --force-with-lease}
 Function pushnew($branch) {git push --set-upstream origin $branch}
-Function push {git push}
+Function p {git push}
 Function plog($modifier) {git log --graph --pretty='format:%n %an %ad %C(auto)%d %n %Creset%<(135,trunc)%s' $modifier}
 Function log {git log --pretty='format:%n %an %ad %C(auto)%d %n %Creset%<(149,trunc)%s'}
 Function gits {git status}
