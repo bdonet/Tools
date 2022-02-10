@@ -21,6 +21,18 @@ Function jmigrate {pushd $jobcosting\JobCosting.Persistence; dotnet ef database 
 Function prof {code $personaltools\Microsoft.PowerShell_profile.ps1}
 Function updateprof {Copy-Item "C:\Users\bend\Documents\Tools\Microsoft.PowerShell_profile.ps1" -Destination "C:\Users\bend\Documents\WindowsPowerShell"}
 
+# Visual Studio utilties
+Set-Alias -name msbuild -Value "$vs\Professional\MSBuild\Current\Bin\msbuild.exe"
+Function build ($solution) {msbuild -nologo -v:q -clp:ErrorsOnly $solution}
+Function buildall
+{
+    $solutions = Get-ChildItem -Path . -Name -Include "*.sln";
+    foreach ($solution in $solutions)
+    {
+        build $solution;
+    }
+}
+
 # Helpful git shortcuts
 Function fp {git push --force-with-lease}
 Function pushnew($branch) {git push --set-upstream origin $branch}
