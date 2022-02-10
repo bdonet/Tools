@@ -23,10 +23,10 @@ Function updateprof {Copy-Item "C:\Users\bend\Documents\Tools\Microsoft.PowerShe
 
 # Visual Studio utilties
 Set-Alias -name msbuild -Value "$vs\Professional\MSBuild\Current\Bin\msbuild.exe"
-Function build ($solution) {msbuild -nologo -v:q -clp:ErrorsOnly $solution}
+Function build ($solution) {msbuild -nologo -v:q -clp:ErrorsOnly ./$solution}
 Function buildall
 {
-    $solutions = Get-ChildItem -Path . -Name -Include "*.sln";
+    $solutions = Get-ChildItem -Name -Recurse -Include "*.sln" -Exclude "*SQLCLR*","*winforms*";
     foreach ($solution in $solutions)
     {
         build $solution;
