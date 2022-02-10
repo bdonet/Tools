@@ -23,7 +23,7 @@ Function updateprof {Copy-Item "C:\Users\bend\Documents\Tools\Microsoft.PowerShe
 
 # Visual Studio utilties
 Set-Alias -name msbuild -Value "$vs\Professional\MSBuild\Current\Bin\msbuild.exe"
-Function build ($solution) {msbuild -nologo -v:q -clp:ErrorsOnly ./$solution}
+Function build ($solution) {msbuild -nologo -v:q -clp:ErrorsOnly -r ./$solution}
 Function buildall
 {
     $solutions = Get-ChildItem -Name -Recurse -Include "*.sln" -Exclude "*SQLCLR*","*winforms*";
@@ -57,8 +57,8 @@ popd
 Import-Module posh-git
 Import-Module oh-my-posh
 Set-PoshPrompt -Theme atomic
-colorGit C:\inetpub\wwwroot
-colorGit C:\jobcosting
-colorGit C:\Users\bend\Documents\Tools
+colorGit $betenbough
+colorGit $jobcosting
+colorGit $personaltools
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
