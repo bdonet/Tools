@@ -26,6 +26,7 @@ Function pushnew($branch) {git push --set-upstream origin $branch}
 Function push {git push}
 Function plog($modifier) {git log --graph --pretty='format:%n %an %ad %C(auto)%d %n %Creset%<(135,trunc)%s' $modifier}
 Function log {git log --pretty='format:%n %an %ad %C(auto)%d %n %Creset%<(149,trunc)%s'}
+Function gits {git status}
 
 Function csb {rm ./Message.xml; rm ./Properties.xml}
 
