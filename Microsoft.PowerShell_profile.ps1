@@ -1,23 +1,24 @@
-#Open various applications
-Set-Alias -Name vs -Value C:\"Program Files"\"Microsoft Visual Studio"\2022\Professional\Common7\IDE\devenv.exe
+# Directory shortcuts
+$betenbough = "C:\inetpub\wwwroot"
+$jobcosting = "C:\jobcosting"
+$personaltools = "C:\Users\bend\Documents\Tools"
+$vs = "C:\Program Files\Microsoft Visual Studio\2022"
+Function bet {cd $betenbough}
+Function jcs {cd $jobcosting}
+Function tools {cd $personaltools}
+
+# Open various applications
+Set-Alias -Name vs -Value $vs\Professional\Common7\IDE\devenv.exe
 Set-Alias -Name st -Value C:\Users\bend\AppData\Local\SourceTree\SourceTree.exe
 Set-Alias -Name sb -Value C:\ServiceBusExplorer\ServiceBusExplorer.exe
 
 # Perform database migrations
 Function migrate {jmigrate; bmigrate}
 Set-Alias -Name bmigrate -Value C:\Utilities\DevUtilityDotNetCore\LocalMigration.ps1
-Function jmigrate {pushd C:\jobcosting\JobCosting.Persistence; dotnet ef database update; popd}
-
-# Directory shortcuts
-Set-Alias -Name betenbough -Value C:\inetpub\wwwroot
-Set-Alias -Name jobcosting -Value C:\jobcosting
-Set-Alias -Name personaltools -Value C:\Users\bend\Documents\Tools
-Function bet {cd C:\inetpub\wwwroot}
-Function jcs {cd C:\jobcosting}
-Function tools {cd C:\Users\bend\Documents\Tools}
+Function jmigrate {pushd $jobcosting\JobCosting.Persistence; dotnet ef database update; popd}
 
 # Open the powershell profile in notepad
-Function prof {code C:\Users\bend\Documents\Tools\Microsoft.PowerShell_profile.ps1}
+Function prof {code $personaltools\Microsoft.PowerShell_profile.ps1}
 Function updateprof {Copy-Item "C:\Users\bend\Documents\Tools\Microsoft.PowerShell_profile.ps1" -Destination "C:\Users\bend\Documents\WindowsPowerShell"}
 
 # Helpful git shortcuts
