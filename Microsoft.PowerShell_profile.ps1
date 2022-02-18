@@ -16,6 +16,12 @@ Set-Alias -Name sb -Value C:\ServiceBusExplorer\ServiceBusExplorer.exe
 Function migrate {jmigrate; bmigrate}
 Set-Alias -Name bmigrate -Value C:\Utilities\DevUtilityDotNetCore\LocalMigration.ps1
 Function jmigrate {pushd $jobcosting\JobCosting.Persistence; dotnet ef database update; popd}
+Function addMigration ($name)
+{
+    pushd $jobcosting\JobCosting.Persistence;
+    dotnet ef migrations add $name;
+    popd;
+}
 
 # Open the powershell profile in notepad
 Function prof {code $personaltools\Microsoft.PowerShell_profile.ps1}
