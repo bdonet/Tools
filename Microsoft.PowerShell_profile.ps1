@@ -33,13 +33,28 @@ Function build ($solution) {msbuild -nologo -v:q -clp:ErrorsOnly -r ./$solution}
 Function test ($solution) {dotnet test -v q --nologo --no-build --filter Tests.Unit ./$solution}
 Function buildall
 {
+    echo "Building all solutions...";
     $solutions = Get-ChildItem -Name -Recurse -Include "*.sln" -Exclude "*SQLCLR*","*winforms*";
     foreach ($solution in $solutions)
     {
         echo $solution;
         build $solution;
+    }
+}
+Function testall
+{
+    echo "Testing all projects"
+    $solutions = Get-ChildItem -Name -Recurse -Include "*.sln" -Exclude "*SQLCLR*","*winforms*";
+    foreach ($solution in $solutions)
+    {
+        echo $solution;
         test $solution;
     }
+}
+Function bat
+{
+    buildall;
+    testall;
 }
 
 # Helpful git shortcuts
