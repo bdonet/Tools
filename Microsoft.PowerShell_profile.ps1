@@ -50,6 +50,7 @@ Function plog($modifier) {git log --graph --pretty='format:%n %an %ad %C(auto)%d
 Function log {git log --pretty='format:%n %an %ad %C(auto)%d %n %Creset%<(149,trunc)%s'}
 Function gits {git status}
 Function f {git fetch}
+Function rc {git rebase --continue}
 
 Function csb {rm ./Message.xml; rm ./Properties.xml}
 
