@@ -66,6 +66,7 @@ Function log {git log --pretty='format:%n %an %ad %C(auto)%d %n %Creset%<(149,tr
 Function gits {git status}
 Function f {git fetch}
 Function rc {git rebase --continue}
+Function commitdiff($commit) {git diff $commit~ $commit}
 
 Function csb {rm ./Message.xml; rm ./Properties.xml}
 
