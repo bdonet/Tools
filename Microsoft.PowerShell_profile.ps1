@@ -43,7 +43,7 @@ Function buildall
 }
 Function testall
 {
-    echo "Testing all projects"
+    echo "Testing all projects..."
     $solutions = Get-ChildItem -Name -Recurse -Include "*.sln" -Exclude "*SQLCLR*","*winforms*";
     foreach ($solution in $solutions)
     {
