@@ -13,7 +13,7 @@ Set-Alias -Name st -Value C:\Users\bend\AppData\Local\SourceTree\SourceTree.exe
 Set-Alias -Name sb -Value C:\ServiceBusExplorer\ServiceBusExplorer.exe
 
 # Perform database migrations
-Function migrate {bmigrate; jmigrate}
+Function migrate {jmigrate; bmigrate}
 Set-Alias -Name bmigrate -Value C:\Utilities\DevUtilityDotNetCore\LocalMigration.ps1
 Function jmigrate {pushd $jobcosting\JobCosting.Persistence; dotnet ef database update; popd}
 Function addMigration ($name)
