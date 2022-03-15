@@ -3,9 +3,9 @@ $betenbough = "C:\inetpub\wwwroot"
 $jobcosting = "C:\jobcosting"
 $personaltools = "C:\Users\bend\Documents\Tools"
 $vs = "C:\Program Files\Microsoft Visual Studio\2022"
-Function bet {cd $betenbough}
-Function jcs {cd $jobcosting}
-Function tools {cd $personaltools}
+Function bet {Set-Location $betenbough}
+Function jcs {Set-Location $jobcosting}
+Function tools {Set-Location $personaltools}
 
 # Open various applications
 Set-Alias -Name vs -Value $vs\Professional\Common7\IDE\devenv.exe
@@ -14,13 +14,13 @@ Set-Alias -Name sb -Value C:\ServiceBusExplorer\ServiceBusExplorer.exe
 
 # Perform database migrations
 Function migrate {jmigrate; bmigrate}
-Function bmigrate {start powershell {C:\Utilities\DevUtilityDotNetCore\LocalMigration.ps1}}
-Function jmigrate {pushd $jobcosting\JobCosting.Persistence; dotnet ef database update; popd}
+Function bmigrate {Start-Process powershell {C:\Utilities\DevUtilityDotNetCore\LocalMigration.ps1}}
+Function jmigrate {Push-Location $jobcosting\JobCosting.Persistence; dotnet ef database update; Pop-Location}
 Function addMigration ($name)
 {
-    pushd $jobcosting\JobCosting.Persistence;
+    Push-Location $jobcosting\JobCosting.Persistence;
     dotnet ef migrations add $name;
-    popd;
+    Pop-Location;
 }
 
 # Open the powershell profile in notepad
@@ -33,21 +33,21 @@ Function build ($solution) {msbuild -nologo -v:q -clp:ErrorsOnly -r ./$solution}
 Function test ($solution) {dotnet test -v q --nologo --no-build --filter Tests.Unit ./$solution}
 Function buildall
 {
-    echo "Building all solutions...";
+    Write-Output "Building all solutions...";
     $solutions = Get-ChildItem -Name -Recurse -Include "*.sln" -Exclude "*SQLCLR*","*winforms*";
     foreach ($solution in $solutions)
     {
-        echo $solution;
+        Write-Output $solution;
         build $solution;
     }
 }
 Function testall
 {
-    echo "Testing all projects..."
+    Write-Output "Testing all projects..."
     $solutions = Get-ChildItem -Name -Recurse -Include "*.sln" -Exclude "*SQLCLR*","*winforms*";
     foreach ($solution in $solutions)
     {
-        echo $solution;
+        Write-Output $solution;
         test $solution;
     }
 }
@@ -68,18 +68,18 @@ Function f {git fetch}
 Function rc {git rebase --continue}
 Function commitdiff($commit) {git diff $commit~ $commit}
 
-Function csb {rm ./Message.xml; rm ./Properties.xml}
+Function csb {Remove-Item ./Message.xml; Remove-Item ./Properties.xml}
 
 # Improve the git experience in powershell
 Function colorGit ($location) {
-pushd $location
+Push-Location $location
 git config color.status.branch "yellow bold"
 git config color.status.nobranch "magenta bold"
 git config color.status.unmerged "red bold"
 git config color.status.added "green bold"
 git config color.status.changed "red bold"
 git config color.status.untracked "red bold"
-popd
+Pop-Location
 }
 Import-Module posh-git
 Import-Module oh-my-posh
