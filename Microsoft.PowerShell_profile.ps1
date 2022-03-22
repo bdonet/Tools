@@ -65,8 +65,13 @@ Function plog($modifier) {git log --graph --pretty='format: %an %ad %C(auto)%d %
 Function log {git log --color --pretty='format:%n %an %ad %C(yellow bold)%h %C(auto)%d %n %Creset%<(149,trunc)%s'}
 Function gits {git status}
 Function f {git fetch}
-Function rc {git rebase --continue}
 Function commitdiff($commit) {git diff $commit~ $commit}
+Function rc
+{
+    git add *;
+    git commit --no-edit;
+    git rebase --continue
+}
 
 Function csb {Remove-Item ./Message.xml; Remove-Item ./Properties.xml}
 
