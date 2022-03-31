@@ -1,10 +1,12 @@
 # Directory shortcuts
 $betenbough = "C:\inetpub\wwwroot"
 $jobcosting = "C:\jobcosting"
+$accountingservice = "C:\accountingservice"
 $personaltools = "C:\Users\bend\Documents\Tools"
 $vs = "C:\Program Files\Microsoft Visual Studio\2022"
 Function bet {Set-Location $betenbough}
 Function jcs {Set-Location $jobcosting}
+Function acs {Set-Location $accountingservice}
 Function tools {Set-Location $personaltools}
 
 # Open various applications
