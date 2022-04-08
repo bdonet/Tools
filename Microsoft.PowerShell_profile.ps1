@@ -61,7 +61,7 @@ Function bat
 
 # Helpful git shortcuts
 Function fp {git push --force-with-lease}
-Function pushnew($branch) {git push --set-upstream origin $branch}
+Function pn {git push -u origin HEAD}
 Function p {git push}
 Function plog($modifier) {git log --graph --pretty='format: %an %ad %C(auto)%d %n %Creset%<(135,trunc)%s %n' $modifier}
 Function log {git log --color --pretty='format:%n %an %ad %C(yellow bold)%h %C(auto)%d %n %Creset%<(149,trunc)%s'}
