@@ -13,7 +13,7 @@ Function tools {Set-Location $personaltools}
 Set-Alias -Name vs -Value $vs\Professional\Common7\IDE\devenv.exe
 Set-Alias -Name st -Value C:\Users\bend\AppData\Local\SourceTree\SourceTree.exe
 Set-Alias -Name sb -Value C:\ServiceBusExplorer\ServiceBusExplorer.exe
-Set-Alias -Name ase -Value C:\Users\bend\AppData\Local\Programs\Microsoft Azure Storage Explorer\StorageExplorer.exe
+Set-Alias -Name ase -Value C:\Users\bend\AppData\Local\Programs\"Microsoft Azure Storage Explorer"\StorageExplorer.exe
 
 # Perform database migrations
 Function migrate {bmigrate; jmigrate}
