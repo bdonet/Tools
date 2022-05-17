@@ -3,11 +3,13 @@ $betenbough = "C:\inetpub\wwwroot"
 $jobcosting = "C:\jobcosting"
 $accountingservice = "C:\accountingservice"
 $personaltools = "C:\Users\bend\Documents\Tools"
+$keymaps = "C:\Users\bend\Documents\QMKKeymaps"
 $vs = "C:\Program Files\Microsoft Visual Studio\2022"
 Function bet {Set-Location $betenbough}
 Function jcs {Set-Location $jobcosting}
 Function acs {Set-Location $accountingservice}
 Function tools {Set-Location $personaltools}
+Function qmk {Set-Location $keymaps}
 
 # Open various applications
 Set-Alias -Name vs -Value $vs\Professional\Common7\IDE\devenv.exe
