@@ -37,16 +37,6 @@ Set-Alias -name msbuild -Value "$vs\Professional\MSBuild\Current\Bin\msbuild.exe
 Function build ($solution) {msbuild -nologo -v:q -clp:ErrorsOnly ./$solution}
 Function restore ($solution) {nuget restore -verbosity quiet ./$solution}
 Function test ($solution) {dotnet test -v q --nologo --no-build --filter Tests.Unit ./$solution}
-Function restoreall
-{
-    Write-Output "Restoring all solutions...";
-    $solutions = Get-ChildItem -Name -Recurse -Include "*.sln" -Exclude "*SQLCLR*","*winforms*";
-    foreach ($solution in $solutions)
-    {
-        Write-Output $solution;
-        restore $solution;
-    }
-}
 Function buildall
 {
     Write-Output "Building all solutions...";
@@ -55,6 +45,16 @@ Function buildall
     {
         Write-Output $solution;
         build $solution;
+    }
+}
+Function restoreall
+{
+    Write-Output "Restoring all solutions...";
+    $solutions = Get-ChildItem -Name -Recurse -Include "*.sln" -Exclude "*SQLCLR*","*winforms*";
+    foreach ($solution in $solutions)
+    {
+        Write-Output $solution;
+        restore $solution;
     }
 }
 Function testall
