@@ -40,7 +40,7 @@ Function restore ($solution) {nuget restore -verbosity quiet ./$solution}
 Function test ($solution) {dotnet test -v q --nologo --no-build --filter Tests.Unit ./$solution}
 Function buildall
 {
-    Write-Output "Building all solutions...";
+    Write-Host "Building all solutions..." -ForegroundColor Cyan;
     $solutions = Get-ChildItem -Name -Recurse -Include "*.sln" -Exclude "*SQLCLR*","*winforms*";
     foreach ($solution in $solutions)
     {
@@ -50,7 +50,7 @@ Function buildall
 }
 Function restoreall
 {
-    Write-Output "Restoring all solutions...";
+    Write-Host "Restoring all solutions..." -ForegroundColor Cyan;
     $solutions = Get-ChildItem -Name -Recurse -Include "*.sln" -Exclude "*SQLCLR*","*winforms*";
     foreach ($solution in $solutions)
     {
@@ -60,7 +60,7 @@ Function restoreall
 }
 Function testall
 {
-    Write-Output "Testing all projects..."
+    Write-Host "Testing all projects... " -ForegroundColor Cyan;
     $solutions = Get-ChildItem -Name -Recurse -Include "*.sln" -Exclude "*SQLCLR*","*winforms*";
     foreach ($solution in $solutions)
     {
