@@ -72,6 +72,12 @@ Function bat
     buildall;
     testall;
 }
+Function resetrepo
+{
+    clean;
+    restoreall;
+    buildall;
+}
 
 # Helpful git shortcuts
 Function fp {git push --force-with-lease}
