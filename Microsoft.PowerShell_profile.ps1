@@ -34,6 +34,7 @@ Function updateprof {Copy-Item "C:\Users\bend\Documents\Tools\Microsoft.PowerShe
 
 # Visual Studio utilties
 Set-Alias -name msbuild -Value "$vs\Professional\MSBuild\Current\Bin\msbuild.exe"
+Set-Alias -name nuget -Value "C:\Program Files (x86)\NuGet\nuget.exe"
 Function build ($solution) {msbuild -nologo -v:q -clp:ErrorsOnly ./$solution}
 Function restore ($solution) {nuget restore -verbosity quiet ./$solution}
 Function test ($solution) {dotnet test -v q --nologo --no-build --filter Tests.Unit ./$solution}
