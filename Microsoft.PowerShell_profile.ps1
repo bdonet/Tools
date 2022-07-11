@@ -85,6 +85,7 @@ Function resetrepo
 # Helpful git shortcuts
 Function fp {git push --force-with-lease}
 Function pn {git push -u origin HEAD}
+Function newbranch($branchName) {git checkout -b $branchName; pn}
 Function p {git push}
 Function plog($modifier) {git log --graph --pretty='format: %an %ad %C(auto)%d %n %Creset%<(135,trunc)%s %n' $modifier}
 Function log {git log --color --pretty='format:%n %an %ad %C(yellow bold)%h %C(auto)%d %n %Creset%<(149,trunc)%s'}
