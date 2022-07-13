@@ -31,8 +31,8 @@ Function addMigration ($name)
 }
 
 # Open the powershell profile in notepad
-Function prof {code $personaltools\Microsoft.PowerShell_profile.ps1}
-Function updateprof {Copy-Item "C:\Users\bend\Documents\Tools\Microsoft.PowerShell_profile.ps1" -Destination "C:\Users\bend\Documents\WindowsPowerShell"}
+Function profile {code $personaltools\Microsoft.PowerShell_profile.ps1}
+Function updateprofile {Copy-Item "C:\Users\bend\Documents\Tools\Microsoft.PowerShell_profile.ps1" -Destination "C:\Users\bend\Documents\WindowsPowerShell"}
 
 # Visual Studio utilties
 Set-Alias -name msbuild -Value "$vs\Professional\MSBuild\Current\Bin\msbuild.exe"
