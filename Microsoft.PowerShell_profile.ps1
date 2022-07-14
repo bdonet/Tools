@@ -5,7 +5,6 @@ $accountingservice = "C:\accountingservice"
 $utilties = "C:\Utilities"
 $personaltools = "C:\Users\bend\Documents\Tools"
 $keymaps = "C:\Users\bend\Documents\QMKKeymaps"
-$vs = "C:\Program Files\Microsoft Visual Studio\2022"
 Function bet {Set-Location $betenbough}
 Function jcs {Set-Location $jobcosting}
 Function acs {Set-Location $accountingservice}
@@ -14,10 +13,12 @@ Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 
 # Open various applications
+$vs = "C:\Program Files\Microsoft Visual Studio\2022"
 Set-Alias -Name vs -Value $vs\Professional\Common7\IDE\devenv.exe
 Set-Alias -Name st -Value C:\Users\bend\AppData\Local\SourceTree\SourceTree.exe
 Set-Alias -Name sb -Value C:\ServiceBusExplorer\ServiceBusExplorer.exe
 Set-Alias -Name ase -Value C:\Users\bend\AppData\Local\Programs\"Microsoft Azure Storage Explorer"\StorageExplorer.exe
+Set-Alias -Name ssms -Value C:\"Program Files (x86)"\"Microsoft SQL Server Management Studio 18"\Common7\IDE\Ssms.exe
 
 # Perform database migrations
 Function migrate {bmigrate; jmigrate}
