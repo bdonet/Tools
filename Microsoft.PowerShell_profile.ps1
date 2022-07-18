@@ -19,6 +19,7 @@ Set-Alias -Name st -Value C:\Users\bend\AppData\Local\SourceTree\SourceTree.exe
 Set-Alias -Name sb -Value C:\ServiceBusExplorer\ServiceBusExplorer.exe
 Set-Alias -Name ase -Value C:\Users\bend\AppData\Local\Programs\"Microsoft Azure Storage Explorer"\StorageExplorer.exe
 Set-Alias -Name ssms -Value C:\"Program Files (x86)"\"Microsoft SQL Server Management Studio 18"\Common7\IDE\Ssms.exe
+Set-Alias -Name music -Value C:\Users\bend\AppData\Roaming\Spotify\Spotify.exe
 
 # Perform database migrations
 Function migrate {bmigrate; jmigrate}
