@@ -123,3 +123,8 @@ colorGit $jobcosting
 colorGit $personaltools
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
+
+# NuGet package shortcuts
+Function packNuGet {dotnet pack}
+Function publishNuGet($feedName, $packagePath) {dotnet nuget push --interactive --source $feedName --api-key "key" $packagePath}
+Function publishBetenboughFeed($packagePath) {publishNuGet "betenbough-feed" $packagePath}
