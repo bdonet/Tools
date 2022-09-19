@@ -3,12 +3,14 @@ $betenbough = "C:\inetpub\wwwroot"
 $jobcosting = "C:\jobcosting"
 $accountingservice = "C:\accountingservice"
 $utilties = "C:\Utilities"
+$datawarehouse = "C:\BetenboughDW"
 $personaltools = "C:\Users\bend\Documents\Tools"
 $keymaps = "C:\Users\bend\Documents\QMKKeymaps"
 Function bet {Set-Location $betenbough}
 Function jcs {Set-Location $jobcosting}
 Function acs {Set-Location $accountingservice}
 Function util {Set-Location $utilties}
+Function dw {Set-Location $datawarehouse}
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 
