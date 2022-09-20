@@ -3,7 +3,7 @@ $betenbough = "C:\inetpub\wwwroot"
 $jobcosting = "C:\jobcosting"
 $accountingservice = "C:\accountingservice"
 $utilties = "C:\Utilities"
-$datawarehouse = "C:\BetenboughDW"
+$datawarehouse = "C:\datawarehouse"
 $personaltools = "C:\Users\bend\Documents\Tools"
 $keymaps = "C:\Users\bend\Documents\QMKKeymaps"
 Function bet {Set-Location $betenbough}
