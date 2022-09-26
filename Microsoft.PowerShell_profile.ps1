@@ -115,6 +115,7 @@ git config color.status.unmerged "red bold"
 git config color.status.added "green bold"
 git config color.status.changed "red bold"
 git config color.status.untracked "red bold"
+git config color.grep.filename "yellow bold"
 Pop-Location
 }
 Import-Module posh-git
