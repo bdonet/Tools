@@ -96,6 +96,7 @@ Function log {git log --color --pretty='format:%n %an %ad %C(yellow bold)%h %C(a
 Function gits {git status}
 Function f {git fetch}
 Function commitdiff($commit) {git diff $commit~ $commit}
+Function commitfilediff($commit) {git diff $commit~ $commit --name-status}
 Function clean {git clean -xdfe *.lic}
 Function rc
 {
