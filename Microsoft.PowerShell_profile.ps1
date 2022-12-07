@@ -127,6 +127,7 @@ colorGit $jobcosting
 colorGit $personaltools
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
+git config commit.verbose 1
 
 # NuGet package shortcuts
 Function packNuGet {dotnet pack}
