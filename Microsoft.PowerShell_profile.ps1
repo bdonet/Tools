@@ -134,8 +134,7 @@ Function setupGit ($location)
 }
 
 Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme atomic
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic" | Invoke-Expression
 
 setupGit $betenbough
 setupGit $jobcosting
