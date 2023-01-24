@@ -122,6 +122,8 @@ Function colorGit
     git config color.status.changed "red bold"
     git config color.status.untracked "red bold"
     git config color.grep.filename "yellow bold"
+    git config color.diff.new "green bold"
+    git config color.diff.old "red bold"
 }
 Function setupGit ($location)
 {
