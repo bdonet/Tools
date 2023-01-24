@@ -108,26 +108,34 @@ Function rc
 Function csb {Remove-Item ./Message.xml; Remove-Item ./Properties.xml}
 
 # Improve the git experience in powershell
-Function colorGit ($location) {
-Push-Location $location
-git config color.status.branch "yellow bold"
-git config color.status.nobranch "magenta bold"
-git config color.status.unmerged "red bold"
-git config color.status.added "green bold"
-git config color.status.changed "red bold"
-git config color.status.untracked "red bold"
-git config color.grep.filename "yellow bold"
-Pop-Location
+Function colorGit
+{
+    git config color.status.branch "yellow bold"
+    git config color.status.nobranch "magenta bold"
+    git config color.status.unmerged "red bold"
+    git config color.status.added "green bold"
+    git config color.status.changed "red bold"
+    git config color.status.untracked "red bold"
+    git config color.grep.filename "yellow bold"
 }
+Function setupGit ($location)
+{
+    Push-Location $location
+    colorGit
+    git config commit.verbose 1
+    Pop-Location
+}
+
 Import-Module posh-git
 Import-Module oh-my-posh
 Set-PoshPrompt -Theme atomic
-colorGit $betenbough
-colorGit $jobcosting
-colorGit $personaltools
+
+setupGit $betenbough
+setupGit $jobcosting
+setupGit $personaltools
+
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
-git config commit.verbose 1
 
 # NuGet package shortcuts
 Function packNuGet {dotnet pack}
