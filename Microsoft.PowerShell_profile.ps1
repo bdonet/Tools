@@ -1,6 +1,11 @@
 # Directory shortcuts
+<<<<<<< HEAD
 $personaltools = "C:\Repos\Tools"
 $keymaps = "C:\Repos\QMKKeymaps"
+=======
+$personaltools = "C:\Users\Ben\Repos\Tools"
+$keymaps = "C:\Users\bend\Documents\QMKKeymaps"
+>>>>>>> be18c80 (Removed Betenbough directories)
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 
