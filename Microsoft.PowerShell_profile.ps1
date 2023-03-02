@@ -112,6 +112,7 @@ Import-Module posh-git
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-Expression
 
 setupGit $personaltools
+setupGit $keymaps
 
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
