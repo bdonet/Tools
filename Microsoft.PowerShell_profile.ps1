@@ -1,38 +1,14 @@
 # Directory shortcuts
-$betenbough = "C:\inetpub\wwwroot"
-$jobcosting = "C:\jobcosting"
-$accountingservice = "C:\accountingservice"
-$utilties = "C:\Utilities"
-$datawarehouse = "C:\datawarehouse"
-$personaltools = "C:\Users\bend\Documents\Tools"
-$keymaps = "C:\Users\bend\Documents\QMKKeymaps"
-Function bet {Set-Location $betenbough}
-Function jcs {Set-Location $jobcosting}
-Function acs {Set-Location $accountingservice}
-Function util {Set-Location $utilties}
-Function dw {Set-Location $datawarehouse}
+$personaltools = "C:\Repos\Tools"
+$keymaps = "C:\Repos\QMKKeymaps"
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022"
 Set-Alias -Name vs -Value $vs\Professional\Common7\IDE\devenv.exe
-Set-Alias -Name st -Value C:\Users\bend\AppData\Local\SourceTree\SourceTree.exe
-Set-Alias -Name sb -Value C:\ServiceBusExplorer\ServiceBusExplorer.exe
-Set-Alias -Name ase -Value C:\Users\bend\AppData\Local\Programs\"Microsoft Azure Storage Explorer"\StorageExplorer.exe
 Set-Alias -Name ssms -Value C:\"Program Files (x86)"\"Microsoft SQL Server Management Studio 18"\Common7\IDE\Ssms.exe
 Set-Alias -Name music -Value C:\Users\bend\AppData\Roaming\Spotify\Spotify.exe
-
-# Perform database migrations
-Function migrate {bmigrate; jmigrate}
-Function bmigrate {Start-Process powershell {C:\Utilities\DevUtilityDotNetCore\LocalMigration.ps1}}
-Function jmigrate {Push-Location $jobcosting\JobCosting.Persistence; dotnet ef database update; Pop-Location}
-Function addMigration ($name)
-{
-    Push-Location $jobcosting\JobCosting.Persistence;
-    dotnet ef migrations add $name;
-    Pop-Location;
-}
 
 # Open the powershell profile in notepad
 Function profile {code $personaltools\Microsoft.PowerShell_profile.ps1}
@@ -110,7 +86,6 @@ Function csb {Remove-Item ./Message.xml; Remove-Item ./Properties.xml}
 # NuGet package shortcuts
 Function packNuGet {dotnet pack}
 Function publishNuGet($feedName, $packagePath) {dotnet nuget push --interactive --source $feedName --api-key "key" $packagePath}
-Function publishBetenboughFeed($packagePath) {publishNuGet "betenbough-feed" $packagePath}
 
 # Improve the git experience in powershell
 Function colorGit
@@ -136,7 +111,6 @@ Function setupGit ($location)
 Import-Module posh-git
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-Expression
 
-setupGit $betenbough
 setupGit $jobcosting
 setupGit $personaltools
 
