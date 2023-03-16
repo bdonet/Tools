@@ -66,7 +66,7 @@ Function resetrepo
 Function fp {git push --force-with-lease}
 Function pn {git push -u origin HEAD}
 Function createbranch($branchName) {git checkout -b $branchName; pn}
-Function deletebranch($branchName) {git push origin -d $branchName}
+Function deletebranch($branchName) {git push origin -d $branchName; git branch -d $branchName}
 Function p {git push}
 Function plog($modifier) {git log --graph --pretty='format: %an %ad %C(auto)%d %n %Creset%<(135,trunc)%s %n' $modifier}
 Function log {git log --color --pretty='format:%n %an %ad %C(yellow bold)%h %C(auto)%d %n %Creset%<(149,trunc)%s'}
