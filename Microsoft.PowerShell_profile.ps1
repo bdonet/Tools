@@ -75,6 +75,7 @@ Function deletebranch($branchName) {git push origin -d $branchName; git branch -
 Function p {git push}
 Function plog($modifier) {git log --graph --pretty='format: %an %ad %C(auto)%d %n %Creset%<(135,trunc)%s %n' $modifier}
 Function log {git log --color --pretty='format:%n %an %ad %C(yellow bold)%h %C(auto)%d %n %Creset%<(149,trunc)%s'}
+Function llog {git log --color --pretty='format:%n %an %ad %C(yellow bold)%h %C(auto)%d %n %Creset%s %n %b'}
 Function gits {git status}
 Function f {git fetch}
 Function commitdiff($commit) {git diff $commit~ $commit}
