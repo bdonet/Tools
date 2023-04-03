@@ -12,7 +12,13 @@ Set-Alias -Name music -Value C:\Users\bend\AppData\Roaming\Spotify\Spotify.exe
 
 # Open the powershell profile in notepad
 Function profile {code $personaltools\Microsoft.PowerShell_profile.ps1}
-Function updateprofile {Copy-Item $personaltools\Microsoft.PowerShell_profile.ps1 -Destination "C:\Users\bend\Documents\WindowsPowerShell"}
+
+# Copy the profile from tools into Powershell 5 and 7 profile directories
+Function updateprofile
+{
+    Copy-Item $personaltools\Microsoft.PowerShell_profile.ps1 -Destination "C:\Users\bend\Documents\WindowsPowerShell";
+    Copy-Item $personaltools\Microsoft.PowerShell_profile.ps1 -Destination "C:\Users\bend\Documents\PowerShell";
+}
 
 # Visual Studio utilties
 Set-Alias -name msbuild -Value "$vs\Professional\MSBuild\Current\Bin\msbuild.exe"
