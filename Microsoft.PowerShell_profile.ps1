@@ -57,7 +57,7 @@ Function bat
 }
 Function resetrepo
 {
-    clean;
+    cleanrepo;
     restoreall;
     buildall;
 }
@@ -74,7 +74,7 @@ Function gits {git status}
 Function f {git fetch}
 Function commitdiff($commit) {git diff $commit~ $commit}
 Function commitfilediff($commit) {git diff $commit~ $commit --name-status}
-Function clean {git clean -xdfe *.lic}
+Function cleanrepo {git clean -xdfe *.lic}
 Function rc
 {
     git add *;
