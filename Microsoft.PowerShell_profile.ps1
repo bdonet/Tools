@@ -1,8 +1,10 @@
 # Directory shortcuts
 $personaltools = "C:\Users\Ben\Repos\Tools"
 $keymaps = "C:\Users\Ben\Repos\QMKKeymaps"
+$autotrader = "C:\Repos\Auto-Trader"
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
+Function trader {Set-Location $autotrader}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022"
