@@ -122,6 +122,7 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-E
 
 setupGit $personaltools
 setupGit $keymaps
+setupGit $autotrader
 
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
