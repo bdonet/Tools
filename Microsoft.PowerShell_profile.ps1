@@ -7,8 +7,8 @@ Function qmk {Set-Location $keymaps}
 Function trader {Set-Location $autotrader}
 
 # Open various applications
-$vs = "C:\Program Files\Microsoft Visual Studio\2022"
-Set-Alias -Name vs -Value $vs\Professional\Common7\IDE\devenv.exe
+$vs = "C:\Program Files\Microsoft Visual Studio\2022\Community"
+Set-Alias -Name vs -Value $vs\Common7\IDE\devenv.exe
 Set-Alias -Name ssms -Value C:\"Program Files (x86)"\"Microsoft SQL Server Management Studio 18"\Common7\IDE\Ssms.exe
 Set-Alias -Name music -Value C:\Users\bend\AppData\Roaming\Spotify\Spotify.exe
 
@@ -23,7 +23,7 @@ Function updateprofile
 }
 
 # Visual Studio utilties
-Set-Alias -name msbuild -Value "$vs\Professional\MSBuild\Current\Bin\msbuild.exe"
+Set-Alias -name msbuild -Value "$vs\MSBuild\Current\Bin\msbuild.exe"
 Set-Alias -name nuget -Value "C:\Program Files (x86)\NuGet\nuget.exe"
 Function build ($solution) {msbuild -nologo -v:q -clp:ErrorsOnly ./$solution}
 Function restore ($solution) {nuget restore -verbosity quiet ./$solution}
