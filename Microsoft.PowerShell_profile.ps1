@@ -8,7 +8,7 @@ Function qmk {Set-Location $keymaps}
 Function trader {Set-Location $autotrader}
 
 # Open various applications
-$vs = "C:\Program Files\Microsoft Visual Studio\2022\Community"
+$vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
 Set-Alias -Name vs -Value $vs\Common7\IDE\devenv.exe
 Set-Alias -Name music -Value $HOME\AppData\Roaming\Spotify\Spotify.exe
 
