@@ -1,2 +1,5 @@
-Steam Valve aid     Prepare for training meeting on Thursday
+Utility billing         Build db for all invoice data
+Chemistry Log Formulas  Build prototype parser for custom formulas
+HRMS Edit Loophole      Daniel will check with Lance before we set up a build-out time
+Explore Shibboleth SSO  Waiting for help from Telecom
 Explore ServiceNow
