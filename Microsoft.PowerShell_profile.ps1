@@ -2,9 +2,11 @@
 $personaltools = "C:\Users\Ben\Repos\Tools"
 $keymaps = "C:\Users\Ben\Repos\QMKKeymaps"
 $autotrader = "C:\Users\Ben\Repos\Auto-Trader"
+$bloomgame = "C:\Users\Ben\Repos\BloomGame"
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 Function trader {Set-Location $autotrader}
+Function bloom {Set-Location $bloomgame}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Community"
@@ -123,6 +125,7 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-E
 setupGit $personaltools
 setupGit $keymaps
 setupGit $autotrader
+setupGit $bloomgame
 
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
