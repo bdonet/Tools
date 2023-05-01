@@ -119,6 +119,17 @@ Function setupGit ($location)
     Pop-Location
 }
 
+Function setupRepos($location)
+{
+    Push-Location $location
+    $repos = Get-ChildItem -Name
+    foreach ($repo in $repos)
+    {
+        setupGit($repo)
+    }
+    Pop-Location
+}
+
 Import-Module posh-git
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-Expression
 
