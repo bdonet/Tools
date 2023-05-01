@@ -129,6 +129,7 @@ Function colorGit
 Function setupGit ($location)
 {
     Push-Location $location
+    # Write-Output $location
     colorGit
     git config commit.verbose 1
     Pop-Location
