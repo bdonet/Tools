@@ -1,4 +1,5 @@
 # Directory shortcuts
+$repos = "C:\Users\Ben\Repos"
 $personaltools = "C:\Users\Ben\Repos\Tools"
 $keymaps = "C:\Users\Ben\Repos\QMKKeymaps"
 $autotrader = "C:\Users\Ben\Repos\Auto-Trader"
@@ -133,10 +134,7 @@ Function setupRepos($location)
 Import-Module posh-git
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-Expression
 
-setupGit $personaltools
-setupGit $keymaps
-setupGit $autotrader
-setupGit $bloomgame
+setupRepos $repos
 
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
