@@ -1,0 +1,13 @@
+C:\Repos\Tools\BlackFallTheme\BlackFallTheme\bin\Debug\BlackFallTheme.dll
+C:\Repos\Tools\BlackFallTheme\BlackFallTheme\bin\Debug\BlackFallTheme.pdb
+C:\Repos\Tools\BlackFallTheme\BlackFallTheme\bin\Debug\BlackFallTheme.vsix
+C:\Repos\Tools\BlackFallTheme\BlackFallTheme\bin\Debug\extension.vsixmanifest
+C:\Repos\Tools\BlackFallTheme\BlackFallTheme\obj\Debug\BlackFallTheme.csproj.AssemblyReference.cache
+C:\Repos\Tools\BlackFallTheme\BlackFallTheme\obj\Debug\_EmptyResource.resources
+C:\Repos\Tools\BlackFallTheme\BlackFallTheme\obj\Debug\BlackFallTheme.csproj.GenerateResource.cache
+C:\Repos\Tools\BlackFallTheme\BlackFallTheme\obj\Debug\BlackFallTheme.csproj.CoreCompileInputs.cache
+C:\Repos\Tools\BlackFallTheme\BlackFallTheme\obj\Debug\BlackFallTheme.dll
+C:\Repos\Tools\BlackFallTheme\BlackFallTheme\obj\Debug\BlackFallTheme.pdb
+C:\Repos\Tools\BlackFallTheme\BlackFallTheme\obj\Debug\extension.vsixmanifest
+C:\Repos\Tools\BlackFallTheme\BlackFallTheme\obj\Debug\files.json
+C:\Repos\Tools\BlackFallTheme\BlackFallTheme\obj\Debug\createTemplateManifests.cache

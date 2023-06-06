@@ -1,5 +1,5 @@
 ﻿<Themes>
-  <Theme Name="BlackFallTheme" GUID="{354356bf-4672-4ef8-b9c6-81af5a0f48dd}" BaseGUID="{dd155c1b-1ca0-4326-8d3a-82baf9f69192}">
+  <Theme Name="BlackFallTheme (1)" GUID="{1a758da9-17d1-4f64-b682-611c3a2103af}" BaseGUID="{dd155c1b-1ca0-4326-8d3a-82baf9f69192}">
     <Category Name="ACDCOverview" GUID="{c8887ac6-3c60-4209-9d69-8f4c12a60044}">
       <Color Name="Body">
         <Background Type="CT_RAW" Source="FF000000" />
@@ -5074,10 +5074,10 @@
         <Background Type="CT_RAW" Source="FF000000" />
       </Color>
       <Color Name="ToolWindowTabGradientBegin">
-        <Background Type="CT_RAW" Source="AE3A1B0C" />
+        <Background Type="CT_RAW" Source="FF000000" />
       </Color>
       <Color Name="ToolWindowTabGradientEnd">
-        <Background Type="CT_RAW" Source="AE3A1B0C" />
+        <Background Type="CT_RAW" Source="FF000000" />
       </Color>
       <Color Name="ToolWindowTabText">
         <Background Type="CT_RAW" Source="FF818181" />
