@@ -1,5 +1,5 @@
 ﻿<Themes>
-  <Theme Name="BlackFallTheme (2)" GUID="{765ec753-7f55-4e76-8d09-340b63b2b414}" BaseGUID="{dd155c1b-1ca0-4326-8d3a-82baf9f69192}">
+  <Theme Name="BlackFallTheme (3)" GUID="{fb62eebf-c6ef-4dd9-a9ae-ebe94d18b4d5}" BaseGUID="{dd155c1b-1ca0-4326-8d3a-82baf9f69192}">
     <Category Name="ACDCOverview" GUID="{c8887ac6-3c60-4209-9d69-8f4c12a60044}">
       <Color Name="Body">
         <Background Type="CT_RAW" Source="FF000000" />
@@ -2039,7 +2039,7 @@
       </Color>
       <Color Name="Type">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF4EC9B0" />
+        <Foreground Type="CT_RAW" Source="FFFF685B" />
       </Color>
       <Color Name="CodeReview.SelectedComment.AnchorPoint">
         <Background Type="CT_RAW" Source="FF0B618C" />
@@ -2199,7 +2199,7 @@
       </Color>
       <Color Name="HTML Comment">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFD6AB7C" />
+        <Foreground Type="CT_RAW" Source="FF8B5E30" />
       </Color>
       <Color Name="HTML Element Name">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2339,7 +2339,7 @@
       </Color>
       <Color Name="interface name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFB8D7A3" />
+        <Foreground Type="CT_RAW" Source="FFFF9B9B" />
       </Color>
       <Color Name="type parameter name">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2347,23 +2347,23 @@
       </Color>
       <Color Name="enum name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFB8D7A3" />
+        <Foreground Type="CT_RAW" Source="FFA9AF54" />
       </Color>
       <Color Name="module name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF4EC9B0" />
+        <Foreground Type="CT_RAW" Source="FFFF685B" />
       </Color>
       <Color Name="class name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFFAC863" />
+        <Foreground Type="CT_RAW" Source="FFFF685B" />
       </Color>
       <Color Name="delegate name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF4EC9B0" />
+        <Foreground Type="CT_RAW" Source="FFFF9B9B" />
       </Color>
       <Color Name="struct name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF4EC9B0" />
+        <Foreground Type="CT_RAW" Source="FFFF9B9B" />
       </Color>
       <Color Name="string - verbatim">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2399,7 +2399,7 @@
       </Color>
       <Color Name="xml doc comment - delimiter">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFD6AB7C" />
+        <Foreground Type="CT_RAW" Source="FF8B5E30" />
       </Color>
       <Color Name="xml doc comment - entity reference">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2407,7 +2407,7 @@
       </Color>
       <Color Name="xml doc comment - name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFEB606B" />
+        <Foreground Type="CT_RAW" Source="FF8B5E30" />
       </Color>
       <Color Name="xml doc comment - processing instruction">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2415,7 +2415,7 @@
       </Color>
       <Color Name="xml doc comment - text">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFD6AB7C" />
+        <Foreground Type="CT_RAW" Source="FF8B5E30" />
       </Color>
       <Color Name="xml literal - attribute name">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2535,7 +2535,7 @@
       </Color>
       <Color Name="LessCssKeywordFormat">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFD69C56" />
+        <Foreground Type="CT_RAW" Source="FFFF8811" />
       </Color>
       <Color Name="ScssMixinDeclarationFormat">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2595,19 +2595,19 @@
       </Color>
       <Color Name="local name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
+        <Foreground Type="CT_RAW" Source="FFD0A57F" />
       </Color>
       <Color Name="parameter name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
+        <Foreground Type="CT_RAW" Source="FF828CBD" />
       </Color>
       <Color Name="method name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF6699CC" />
+        <Foreground Type="CT_RAW" Source="FFF3CF70" />
       </Color>
       <Color Name="extension method name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
+        <Foreground Type="CT_RAW" Source="FFF3CF70" />
       </Color>
       <Color Name="namespace name">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2751,11 +2751,11 @@
       </Color>
       <Color Name="Line Number">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF6A4113" />
+        <Foreground Type="CT_RAW" Source="FF8B8B8B" />
       </Color>
       <Color Name="Selected Line Number">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFE0E0E0" />
+        <Foreground Type="CT_RAW" Source="FFD0A57F" />
       </Color>
       <Color Name="Track additions in documents under source control">
         <Background Type="CT_RAW" Source="FF618928" />
@@ -2779,7 +2779,7 @@
       </Color>
       <Color Name="Selected Text in High Contrast">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFFFFFFF" />
+        <Foreground Type="CT_RAW" Source="00000000" />
       </Color>
       <Color Name="Caret (Primary)">
         <Background Type="CT_INVALID" Source="00000000" />
@@ -3255,7 +3255,7 @@
       </Color>
       <Color Name="keyword - control">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFC594C5" />
+        <Foreground Type="CT_RAW" Source="FFFF8811" />
       </Color>
       <Color Name="operator - overloaded">
         <Background Type="CT_RAW" Source="00000000" />
@@ -3271,19 +3271,19 @@
       </Color>
       <Color Name="field name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
+        <Foreground Type="CT_RAW" Source="FFF7F7A8" />
       </Color>
       <Color Name="enum member name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFFBC2A2" />
+        <Foreground Type="CT_RAW" Source="FF99C794" />
       </Color>
       <Color Name="constant name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
+        <Foreground Type="CT_RAW" Source="FFA9AF54" />
       </Color>
       <Color Name="property name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFFBC2A2" />
+        <Foreground Type="CT_RAW" Source="FFF7F7A8" />
       </Color>
       <Color Name="event name">
         <Background Type="CT_RAW" Source="00000000" />
@@ -8443,11 +8443,11 @@
     <Category Name="Text Editor Language Service Items" GUID="{e0187991-b458-4f7e-8ca9-42c9a573b56c}">
       <Color Name="Keyword">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFD36939" />
+        <Foreground Type="CT_RAW" Source="FFFF8811" />
       </Color>
       <Color Name="Comment">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF6A4113" />
+        <Foreground Type="CT_RAW" Source="FF8B5E30" />
       </Color>
       <Color Name="Identifier">
         <Background Type="CT_RAW" Source="00000000" />
@@ -8455,11 +8455,11 @@
       </Color>
       <Color Name="String">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF67BA5C" />
+        <Foreground Type="CT_RAW" Source="FFA9AF54" />
       </Color>
       <Color Name="Number">
-        <Background Type="CT_RAW" Source="FF67BA5C" />
-        <Foreground Type="CT_RAW" Source="FFF99157" />
+        <Background Type="CT_RAW" Source="00000000" />
+        <Foreground Type="CT_RAW" Source="FFA9AF54" />
       </Color>
       <Color Name="XML CData Section">
         <Background Type="CT_RAW" Source="00000000" />
