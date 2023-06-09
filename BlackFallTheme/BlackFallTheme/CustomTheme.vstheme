@@ -1,5 +1,5 @@
 ﻿<Themes>
-  <Theme Name="BlackFallTheme (3)" GUID="{fb62eebf-c6ef-4dd9-a9ae-ebe94d18b4d5}" BaseGUID="{dd155c1b-1ca0-4326-8d3a-82baf9f69192}">
+  <Theme Name="BlackFallTheme (5)" GUID="{c2e12104-aa5b-4075-a67c-b5368640aa8a}" BaseGUID="{dd155c1b-1ca0-4326-8d3a-82baf9f69192}">
     <Category Name="ACDCOverview" GUID="{c8887ac6-3c60-4209-9d69-8f4c12a60044}">
       <Color Name="Body">
         <Background Type="CT_RAW" Source="FF000000" />
@@ -1039,7 +1039,7 @@
         <Background Type="CT_RAW" Source="FF960000" />
       </Color>
       <Color Name="PopupSelectedInactive">
-        <Background Type="CT_RAW" Source="FFB06F29" />
+        <Background Type="CT_RAW" Source="FF323232" />
         <Foreground Type="CT_RAW" Source="FFFFFFFF" />
       </Color>
       <Color Name="RankedItemsFirst">
@@ -1331,10 +1331,10 @@
         <Background Type="CT_RAW" Source="FFCCCCCC" />
       </Color>
       <Color Name="InnerTabInactiveHoverBackground">
-        <Background Type="CT_RAW" Source="FFB06F29" />
+        <Background Type="CT_RAW" Source="FF323232" />
       </Color>
       <Color Name="InnerTabInactiveHoverBorder">
-        <Background Type="CT_RAW" Source="FFB06F29" />
+        <Background Type="CT_RAW" Source="FF323232" />
       </Color>
       <Color Name="InnerTabInactiveHoverText">
         <Background Type="CT_RAW" Source="FFCCCCCC" />
@@ -2015,7 +2015,7 @@
       </Color>
       <Color Name="OverviewMarginScrollButtons">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFB06F29" />
+        <Foreground Type="CT_RAW" Source="FF312315" />
       </Color>
       <Color Name="OverviewMarginScrollButtonsMouseOver">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2067,11 +2067,11 @@
       </Color>
       <Color Name="Preprocessor Keyword">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFC594C5" />
+        <Foreground Type="CT_RAW" Source="FF9F8BB4" />
       </Color>
       <Color Name="Operator">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF8F8F8F" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="Literal">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2086,8 +2086,8 @@
         <Foreground Type="CT_RAW" Source="FF7CA5A0" />
       </Color>
       <Color Name="CurrentLineActiveFormat">
-        <Background Type="CT_RAW" Source="FFC38D52" />
-        <Foreground Type="CT_RAW" Source="FF282828" />
+        <Background Type="CT_RAW" Source="00000000" />
+        <Foreground Type="CT_RAW" Source="FF573A1E" />
       </Color>
       <Color Name="deltadiff.remove.line">
         <Background Type="CT_RAW" Source="FF2D0000" />
@@ -2103,14 +2103,14 @@
       </Color>
       <Color Name="deltadiff.add.word">
         <Background Type="CT_RAW" Source="FF265E4D" />
-        <Foreground Type="CT_RAW" Source="FF76923C" />
+        <Foreground Type="CT_RAW" Source="FFA9AF54" />
       </Color>
       <Color Name="deltadiff.overview.color">
         <Background Type="CT_RAW" Source="00000000" />
         <Foreground Type="CT_RAW" Source="FF424042" />
       </Color>
       <Color Name="outlining.collapsehintadornment">
-        <Background Type="CT_RAW" Source="FFB06F29" />
+        <Background Type="CT_RAW" Source="FF312315" />
         <Foreground Type="CT_RAW" Source="FFB5B5B5" />
       </Color>
       <Color Name="outlining.square">
@@ -2211,7 +2211,7 @@
       </Color>
       <Color Name="HTML Operator">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF8F8F8F" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="HTML Server-Side Script">
         <Background Type="CT_RAW" Source="FFFFFFB3" />
@@ -2231,7 +2231,7 @@
       </Color>
       <Color Name="VBScript Operator">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFB4B4B4" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="VBScript Number">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2290,8 +2290,8 @@
         <Foreground Type="CT_INVALID" Source="00000000" />
       </Color>
       <Color Name="OverviewMarginVisible">
-        <Background Type="CT_RAW" Source="FFB06F29" />
-        <Foreground Type="CT_RAW" Source="FFB06F29" />
+        <Background Type="CT_RAW" Source="FF312315" />
+        <Foreground Type="CT_RAW" Source="FF312315" />
       </Color>
       <Color Name="OverviewMarginCaret">
         <Background Type="CT_INVALID" Source="00000000" />
@@ -2335,7 +2335,7 @@
       </Color>
       <Color Name="punctuation">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFB5B5B5" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="interface name">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2343,7 +2343,7 @@
       </Color>
       <Color Name="type parameter name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFB8D7A3" />
+        <Foreground Type="CT_RAW" Source="FFFF9B9B" />
       </Color>
       <Color Name="enum name">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2371,7 +2371,7 @@
       </Color>
       <Color Name="preprocessor text">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF99C794" />
+        <Foreground Type="CT_RAW" Source="FF8B5E30" />
       </Color>
       <Color Name="MarkerFormatDefinition/HighlightedDefinition">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2483,7 +2483,7 @@
       </Color>
       <Color Name="Stale Code">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF9B9B9B" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="RoslynRenameFixupTag">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2583,7 +2583,7 @@
       </Color>
       <Color Name="regex - self escaped character">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFD69D85" />
+        <Foreground Type="CT_RAW" Source="FFFFD68F" />
       </Color>
       <Color Name="regex - other escape">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2675,7 +2675,7 @@
       </Color>
       <Color Name="axml - attribute quotes">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF808080" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="axml - attribute value">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2691,7 +2691,7 @@
       </Color>
       <Color Name="axml - delimiter">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF808080" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="axml - entity reference">
         <Background Type="CT_RAW" Source="00000000" />
@@ -2734,7 +2734,7 @@
         <Foreground Type="CT_RAW" Source="FFC24B4B" />
       </Color>
       <Color Name="StickyScrollLineHighlightFormat">
-        <Background Type="CT_INVALID" Source="00000000" />
+        <Background Type="CT_RAW" Source="FF2DCAA8" />
         <Foreground Type="CT_RAW" Source="FFEAEAF2" />
       </Color>
       <Color Name="MarkerFormatDefinition/SelectedTextInScrollBar">
@@ -2751,23 +2751,23 @@
       </Color>
       <Color Name="Line Number">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF8B8B8B" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="Selected Line Number">
         <Background Type="CT_RAW" Source="00000000" />
         <Foreground Type="CT_RAW" Source="FFD0A57F" />
       </Color>
       <Color Name="Track additions in documents under source control">
-        <Background Type="CT_RAW" Source="FF618928" />
-        <Foreground Type="CT_INVALID" Source="00000000" />
+        <Background Type="CT_RAW" Source="FFA9AF54" />
+        <Foreground Type="CT_RAW" Source="00000000" />
       </Color>
       <Color Name="Track modifications in documents under source control">
-        <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_INVALID" Source="00000000" />
+        <Background Type="CT_RAW" Source="FFF3CF70" />
+        <Foreground Type="CT_RAW" Source="00000000" />
       </Color>
       <Color Name="Track deletions in documents under source control">
-        <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_INVALID" Source="00000000" />
+        <Background Type="CT_RAW" Source="FFFF685B" />
+        <Foreground Type="CT_RAW" Source="00000000" />
       </Color>
       <Color Name="Word Wrap Glyph">
         <Background Type="CT_INVALID" Source="00000000" />
@@ -3066,7 +3066,7 @@
         <Foreground Type="CT_INVALID" Source="00000000" />
       </Color>
       <Color Name="Call Return (new context)">
-        <Background Type="CT_INVALID" Source="00000000" />
+        <Background Type="CT_RAW" Source="FFB4E4B4" />
         <Foreground Type="CT_INVALID" Source="00000000" />
       </Color>
       <Color Name="Tracepoint - Dependent (Enabled)">
@@ -3259,7 +3259,7 @@
       </Color>
       <Color Name="operator - overloaded">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="record class name">
         <Background Type="CT_RAW" Source="00000000" />
@@ -3287,7 +3287,7 @@
       </Color>
       <Color Name="event name">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
+        <Foreground Type="CT_RAW" Source="FF99C794" />
       </Color>
       <Color Name="label name">
         <Background Type="CT_RAW" Source="00000000" />
@@ -3315,11 +3315,11 @@
       </Color>
       <Color Name="json - operator">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="json - punctuation">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFDCDCDC" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="json - object">
         <Background Type="CT_RAW" Source="00000000" />
@@ -6921,16 +6921,16 @@
     </Category>
     <Category Name="Locals" GUID="{8259aced-490a-41b3-a0fb-64c842ccdc80}">
       <Color Name="ChangedText">
-        <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFF7A1A1" />
+        <Background Type="CT_RAW" Source="00000000" />
+        <Foreground Type="CT_RAW" Source="FFF7F7A8" />
       </Color>
       <Color Name="Plain Text">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF900909" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="SelectedText">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFCCCCCC" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
     </Category>
     <Category Name="ManifestDesigner" GUID="{b239f458-9f75-4376-959b-4d48b89337f4}">
@@ -7017,7 +7017,7 @@
         <Background Type="CT_RAW" Source="FF000000" />
       </Color>
       <Color Name="ContentInactiveSelected">
-        <Background Type="CT_RAW" Source="FFB06F29" />
+        <Background Type="CT_RAW" Source="FF323232" />
         <Foreground Type="CT_RAW" Source="FFCCCCCC" />
       </Color>
       <Color Name="WonderbarMouseOver">
@@ -7166,7 +7166,7 @@
         <Foreground Type="CT_RAW" Source="FFF0F0F0" />
       </Color>
       <Color Name="Inactive Selected Text">
-        <Background Type="CT_RAW" Source="FFC38D52" />
+        <Background Type="CT_RAW" Source="FF323232" />
         <Foreground Type="CT_INVALID" Source="00000000" />
       </Color>
       <Color Name="urlformat">
@@ -8491,7 +8491,7 @@
       </Color>
       <Color Name="Text">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FFCACACA" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="SQL Stored Procedure">
         <Background Type="CT_RAW" Source="00000000" />
@@ -8507,7 +8507,7 @@
       </Color>
       <Color Name="SQL Operator">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF818181" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="SQL String">
         <Background Type="CT_RAW" Source="00000000" />
@@ -8531,7 +8531,7 @@
       </Color>
       <Color Name="XAML Delimiter">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF808080" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="XAML Comment">
         <Background Type="CT_RAW" Source="00000000" />
@@ -8559,7 +8559,7 @@
       </Color>
       <Color Name="XAML Attribute Quotes">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF808080" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="XAML Markup Extension Class">
         <Background Type="CT_RAW" Source="00000000" />
@@ -8583,7 +8583,7 @@
       </Color>
       <Color Name="XML Delimiter">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF808080" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="XML Name">
         <Background Type="CT_RAW" Source="00000000" />
@@ -8603,7 +8603,7 @@
       </Color>
       <Color Name="XML Attribute Quotes">
         <Background Type="CT_RAW" Source="00000000" />
-        <Foreground Type="CT_RAW" Source="FF808080" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="XSLT Keyword">
         <Background Type="CT_RAW" Source="00000000" />
@@ -8632,11 +8632,11 @@
         <Foreground Type="CT_RAW" Source="FFB5B5B5" />
       </Color>
       <Color Name="Selected Text">
-        <Background Type="CT_RAW" Source="FFDC8F3A" />
+        <Background Type="CT_RAW" Source="FFB57D40" />
         <Foreground Type="CT_RAW" Source="00000000" />
       </Color>
       <Color Name="Inactive Selected Text">
-        <Background Type="CT_RAW" Source="FFDC8F3A" />
+        <Background Type="CT_RAW" Source="FFB57D40" />
         <Foreground Type="CT_RAW" Source="00000000" />
       </Color>
       <Color Name="Indicator Margin">
@@ -8659,7 +8659,7 @@
       </Color>
       <Color Name="Bookmark">
         <Background Type="CT_RAW" Source="FF7E6551" />
-        <Foreground Type="CT_INVALID" Source="00000000" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="compiler error">
         <Background Type="CT_INVALID" Source="00000000" />
@@ -8698,12 +8698,12 @@
         <Foreground Type="CT_RAW" Source="FFD7BA7D" />
       </Color>
       <Color Name="Track Changes before save">
-        <Background Type="CT_RAW" Source="FFE5D283" />
-        <Foreground Type="CT_RAW" Source="FF4E9F3E" />
+        <Background Type="CT_RAW" Source="FFF3CF70" />
+        <Foreground Type="CT_RAW" Source="00000000" />
       </Color>
       <Color Name="Track Changes after save">
-        <Background Type="CT_RAW" Source="FFBAFF83" />
-        <Foreground Type="CT_RAW" Source="FF31A87C" />
+        <Background Type="CT_RAW" Source="FFA9AF54" />
+        <Foreground Type="CT_RAW" Source="00000000" />
       </Color>
       <Color Name="Brace Matching (Rectangle)">
         <Background Type="CT_RAW" Source="00000000" />
@@ -8747,7 +8747,7 @@
       </Color>
       <Color Name="Collapsible Text (Expanded)">
         <Background Type="CT_INVALID" Source="00000000" />
-        <Foreground Type="CT_INVALID" Source="00000000" />
+        <Foreground Type="CT_RAW" Source="FFA0A0A0" />
       </Color>
       <Color Name="Bookmark (Disabled)">
         <Background Type="CT_RAW" Source="FFBFD2F9" />
@@ -8794,7 +8794,7 @@
         <Foreground Type="CT_RAW" Source="FFFFFFFF" />
       </Color>
       <Color Name="SelectedItemInactive">
-        <Background Type="CT_RAW" Source="FFB06F29" />
+        <Background Type="CT_RAW" Source="FF323232" />
         <Foreground Type="CT_RAW" Source="FFCCCCCC" />
       </Color>
       <Color Name="ListItemMouseOver">
@@ -8985,7 +8985,7 @@
         <Foreground Type="CT_RAW" Source="FFFFFFFF" />
       </Color>
       <Color Name="SelectedItemInactive">
-        <Background Type="CT_RAW" Source="FFB06F29" />
+        <Background Type="CT_RAW" Source="FF323232" />
         <Foreground Type="CT_RAW" Source="FFCCCCCC" />
       </Color>
       <Color Name="FocusVisualBorder">
