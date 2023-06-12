@@ -1,5 +1,5 @@
 ﻿<Themes>
-  <Theme Name="BlackFallTheme (5)" GUID="{c2e12104-aa5b-4075-a67c-b5368640aa8a}" BaseGUID="{dd155c1b-1ca0-4326-8d3a-82baf9f69192}">
+  <Theme Name="BlackFallTheme (7)" GUID="{f5e037bd-ccd6-4288-9503-a409ca41822a}" BaseGUID="{dd155c1b-1ca0-4326-8d3a-82baf9f69192}">
     <Category Name="ACDCOverview" GUID="{c8887ac6-3c60-4209-9d69-8f4c12a60044}">
       <Color Name="Body">
         <Background Type="CT_RAW" Source="FF000000" />
@@ -7418,13 +7418,13 @@
         <Background Type="CT_RAW" Source="FF5C5C5C" />
       </Color>
       <Color Name="ActionButtonMouseOver">
-        <Background Type="CT_RAW" Source="33000000" />
+        <Background Type="CT_RAW" Source="00000000" />
       </Color>
       <Color Name="ActionButtonMouseDownGlyph">
         <Background Type="CT_RAW" Source="FFCCCCCC" />
       </Color>
       <Color Name="ActionButtonMouseDown">
-        <Background Type="CT_RAW" Source="33000000" />
+        <Background Type="CT_RAW" Source="00000000" />
       </Color>
       <Color Name="StopGlyph">
         <Background Type="CT_RAW" Source="FFD6D6D6" />
@@ -7576,10 +7576,10 @@
         <Background Type="CT_RAW" Source="FF616161" />
       </Color>
       <Color Name="ActionButtonMouseDownBorder">
-        <Background Type="CT_RAW" Source="11FFFFFF" />
+        <Background Type="CT_RAW" Source="00000000" />
       </Color>
       <Color Name="ActionButtonMouseOverBorder">
-        <Background Type="CT_RAW" Source="11FFFFFF" />
+        <Background Type="CT_RAW" Source="00000000" />
       </Color>
       <Color Name="SearchActiveBackground">
         <Background Type="CT_RAW" Source="33000000" />
