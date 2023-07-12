@@ -157,6 +157,7 @@ Import-Module posh-git
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-Expression
 
 setupRepos $repos
+setupRepos "$repos\Random Code"
 setupRepos $ttudesignrepos
 
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
