@@ -1,5 +1,5 @@
 # Directory shortcuts
-$repos = "C:\Users\Ben\Repos"
+$repos = "$HOME\Repos"
 $personaltools = "$repos\Tools"
 $keymaps = "$repos\QMKKeymaps"
 $autotrader = "$repos\Auto-Trader"
@@ -13,7 +13,7 @@ Function bloom {Set-Location $bloomgame}
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Community"
 Set-Alias -Name vs -Value $vs\Common7\IDE\devenv.exe
 Set-Alias -Name ssms -Value C:\"Program Files (x86)"\"Microsoft SQL Server Management Studio 18"\Common7\IDE\Ssms.exe
-Set-Alias -Name music -Value C:\Users\bend\AppData\Roaming\Spotify\Spotify.exe
+Set-Alias -Name music -Value $HOME\AppData\Roaming\Spotify\Spotify.exe
 
 # Open the powershell profile in notepad
 Function profile {code $personaltools\Microsoft.PowerShell_profile.ps1}
@@ -21,8 +21,8 @@ Function profile {code $personaltools\Microsoft.PowerShell_profile.ps1}
 # Copy the profile from tools into Powershell 5 and 7 profile directories
 Function updateprofile
 {
-    Copy-Item $personaltools\Microsoft.PowerShell_profile.ps1 -Destination "C:\Users\Ben\Documents\WindowsPowerShell";
-    Copy-Item $personaltools\Microsoft.PowerShell_profile.ps1 -Destination "C:\Users\Ben\Documents\PowerShell";
+    Copy-Item $personaltools\Microsoft.PowerShell_profile.ps1 -Destination "$HOME\Documents\WindowsPowerShell";
+    Copy-Item $personaltools\Microsoft.PowerShell_profile.ps1 -Destination "$HOME\Documents\PowerShell";
 }
 
 # Visual Studio utilties
