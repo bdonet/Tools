@@ -1,9 +1,9 @@
 # Directory shortcuts
 $repos = "C:\Users\Ben\Repos"
-$personaltools = "C:\Users\Ben\Repos\Tools"
-$keymaps = "C:\Users\Ben\Repos\QMKKeymaps"
-$autotrader = "C:\Users\Ben\Repos\Auto-Trader"
-$bloomgame = "C:\Users\Ben\Repos\BloomGame"
+$personaltools = "$repos\Tools"
+$keymaps = "$repos\QMKKeymaps"
+$autotrader = "$repos\Auto-Trader"
+$bloomgame = "$repos\BloomGame"
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 Function trader {Set-Location $autotrader}
