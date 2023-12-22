@@ -1,6 +1,7 @@
 # Directory shortcuts
 $repos = "$HOME\Repos"
 $personaltools = "$repos\Tools"
+$keymaps = "$repos\QMKKeymaps"
 Function tools {Set-Location $personaltools}
 
 # Open various applications
