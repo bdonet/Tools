@@ -2,7 +2,10 @@
 $repos = "$HOME\Repos"
 $personaltools = "$repos\Tools"
 $keymaps = "$repos\QMKKeymaps"
+$bloomgame = "$repos\BloomGame"
 Function tools {Set-Location $personaltools}
+Function qmk {Set-Location $keymaps}
+Function bloom {Set-Location $bloomgame}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Community"
