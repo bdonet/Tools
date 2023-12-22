@@ -1,7 +1,13 @@
 # Directory shortcuts
 $repos = "$HOME\Repos"
 $personaltools = "$repos\Tools"
+$autotrader = "$repos\Auto-Trader"
+$bloomgame = "$repos\BloomGame"
+$keymaps = "$repos\QMKKeymaps"
 Function tools {Set-Location $personaltools}
+Function qmk {Set-Location $keymaps}
+Function trader {Set-Location $autotrader}
+Function bloom {Set-Location $bloomgame}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Community"
