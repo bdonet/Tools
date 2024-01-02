@@ -18,8 +18,8 @@ Function profile {code $personaltools\Microsoft.PowerShell_profile.ps1}
 # Copy the profile from tools into Powershell 5 and 7 profile directories
 Function updateprofile
 {
-    Copy-Item $personaltools\Microsoft.PowerShell_profile.ps1 -Destination "$HOME\Documents\WindowsPowerShell";
-    Copy-Item $personaltools\Microsoft.PowerShell_profile.ps1 -Destination "$HOME\Documents\PowerShell";
+    Copy-Item $personaltools\Microsoft.PowerShell_profile.ps1 -Destination "\\opsdivfs03\Personal\bedonet\Documents\WindowsPowerShell";
+    Copy-Item $personaltools\Microsoft.PowerShell_profile.ps1 -Destination "\\opsdivfs03\Personal\bedonet\Documents\PowerShell";
 }
 
 # Solution utilties
