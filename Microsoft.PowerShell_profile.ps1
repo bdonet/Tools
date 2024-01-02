@@ -1,8 +1,14 @@
 # Directory shortcuts
 $repos = "C:\Repos"
+<<<<<<< HEAD
 $personaltools = "$repos\Tools"
 $keymaps = "$repos\QMKKeymaps"
 $autotrader = "$repos\Auto-Trader"
+=======
+$personaltools = "C:\Repos\Tools"
+$keymaps = "C:\Repos\QMKKeymaps"
+$autotrader = "C:\Repos\Auto-Trader"
+>>>>>>> 9853dee (Changed Auto Trader repo location)
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 Function trader {Set-Location $autotrader}
