@@ -11,12 +11,14 @@ $ttugenetecapi = "$repos\GenetecDataAPI"
 $ttutpscitationapp = "$repos\TPSCitationApp"
 $ttukms = "$repos\odkms"
 $ttuutilitybilling = "$repos\UtilitiesBillingApp"
+$ttudesignrepos = "$HOME\OneDrive - Texas Tech University\Design Repos"
 Function csc {Set-Location $ttucsc}
 Function hrms {Set-Location $ttuhrms}
 Function gapi {Set-Location $ttugenetecapi}
 Function tps {Set-Location $ttutpscitationapp}
 Function kms {Set-Location $ttukms}
 Function billing {Set-Location $ttuutilitybilling}
+Function design {Set-Location $ttudesignrepos}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
@@ -147,6 +149,7 @@ Import-Module posh-git
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-Expression
 
 setupRepos $repos
+setupRepos $ttudesignrepos
 
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
