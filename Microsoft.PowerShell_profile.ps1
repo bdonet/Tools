@@ -14,6 +14,7 @@ $ttuutilitybilling = "$repos\UtilitiesBillingApp"
 $ttudesignrepos = "$HOME\OneDrive - Texas Tech University\Design Repos"
 $ttuparser = "$repos\FormulaParser"
 $ttuchemistrylogger = "$repos\ChemistryLogger"
+$ttuauth = "$repos\TTUAuth"
 Function csc {Set-Location $ttucsc}
 Function hrms {Set-Location $ttuhrms}
 Function gapi {Set-Location $ttugenetecapi}
@@ -23,6 +24,7 @@ Function billing {Set-Location $ttuutilitybilling}
 Function design {Set-Location $ttudesignrepos}
 Function parser {Set-Location $ttuparser}
 Function chem {Set-Location $ttuchemistrylogger}
+Function auth {Set-Location $ttuauth}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
