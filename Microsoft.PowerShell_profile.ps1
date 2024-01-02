@@ -3,9 +3,11 @@ $repos = "C:\Repos"
 $personaltools = "$repos\Tools"
 $keymaps = "$repos\QMKKeymaps"
 $autotrader = "$repos\Auto-Trader"
+$csc = "$repos\CSC"
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 Function trader {Set-Location $autotrader}
+Function csc {Set-Location $csc}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
@@ -137,6 +139,7 @@ Import-Module posh-git
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-Expression
 
 setupRepos $repos
+setupGit $csc
 
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
