@@ -12,6 +12,7 @@ $ttutpscitationapp = "$repos\TPSCitationApp"
 $ttukms = "$repos\odkms"
 $ttuutilitybilling = "$repos\UtilitiesBillingApp"
 $ttudesignrepos = "$HOME\OneDrive - Texas Tech University\Design Repos"
+$ttuparser = "$repos\FormulaParser"
 Function csc {Set-Location $ttucsc}
 Function hrms {Set-Location $ttuhrms}
 Function gapi {Set-Location $ttugenetecapi}
@@ -19,6 +20,7 @@ Function tps {Set-Location $ttutpscitationapp}
 Function kms {Set-Location $ttukms}
 Function billing {Set-Location $ttuutilitybilling}
 Function design {Set-Location $ttudesignrepos}
+Function parser {Set-Location $ttuparser}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
