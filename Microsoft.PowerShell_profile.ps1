@@ -19,6 +19,7 @@ $ttuidoffice = "$repos\IDOffice"
 $ttumip = "$repos\odmip"
 $tturesharper = "$HOME\AppData\Roaming\JetBrains\Shared\vAny"
 $ttuswaat = "$repos\swaat"
+$tturideshare = "$repos\RideShareAPI"
 Function csc {Set-Location $ttucsc}
 Function hrms {Set-Location $ttuhrms}
 Function gapi {Set-Location $ttugenetecapi}
@@ -33,6 +34,7 @@ Function id {Set-Location $ttuidoffice}
 Function mip {Set-Location $ttumip}
 Function resharper {Set-Location $tturesharper}
 Function swaat {Set-Location $ttuswaat}
+Function rideshare {Set-Location $tturideshare}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
