@@ -4,10 +4,12 @@ $personaltools = "$repos\Tools"
 $keymaps = "$repos\QMKKeymaps"
 $autotrader = "$repos\Auto-Trader"
 $csc = "$repos\CSC"
+$ttuhrms = "$repos\HRMS"
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 Function trader {Set-Location $autotrader}
 Function csc {Set-Location $csc}
+Function hrms {Set-Location $ttuhrms}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
@@ -140,6 +142,7 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-E
 
 setupRepos $repos
 setupGit $csc
+setupGit $ttuhrms
 
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
