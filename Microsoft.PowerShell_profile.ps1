@@ -9,10 +9,10 @@ Function trader {Set-Location $autotrader}
 
 $ttucsc = "$repos\CSC"
 $ttuhrms = "$repos\HRMS"
-$ttugenetec = "$repos\GenetecAPI"
+$ttugenetecapi = "$repos\GenetecAPI"
 Function csc {Set-Location $ttucsc}
 Function hrms {Set-Location $ttuhrms}
-Function gtec {Set-Location $ttugenetec}
+Function gapi {Set-Location $ttugenetecapi}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
@@ -146,7 +146,7 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-E
 setupRepos $repos
 setupGit $ttucsc
 setupGit $ttuhrms
-setupGit $ttugenetec
+setupGit $ttugenetecapi
 
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
