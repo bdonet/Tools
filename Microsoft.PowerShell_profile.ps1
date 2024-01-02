@@ -9,7 +9,7 @@ Function trader {Set-Location $autotrader}
 
 $ttucsc = "$repos\CSC"
 $ttuhrms = "$repos\HRMS"
-$ttugenetecapi = "$repos\GenetecAPI"
+$ttugenetecapi = "$repos\GenetecDataAPI"
 Function csc {Set-Location $ttucsc}
 Function hrms {Set-Location $ttuhrms}
 Function gapi {Set-Location $ttugenetecapi}
