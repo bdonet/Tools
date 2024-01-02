@@ -7,11 +7,13 @@ $autotrader = "$repos\Auto-Trader"
 =======
 $personaltools = "C:\Repos\Tools"
 $keymaps = "C:\Repos\QMKKeymaps"
+<<<<<<< HEAD
 $autotrader = "C:\Repos\Auto-Trader"
 >>>>>>> 9853dee (Changed Auto Trader repo location)
+=======
+>>>>>>> 5d4c279 (Removed AutoTrader shortcut)
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
-Function trader {Set-Location $autotrader}
 
 $ttucsc = "$repos\CSC"
 $ttuhrms = "$repos\HRMS"
@@ -153,11 +155,6 @@ Import-Module posh-git
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-Expression
 
 setupRepos $repos
-setupGit $ttucsc
-setupGit $ttuhrms
-setupGit $ttugenetecapi
-setupGit $ttutpscitationapp
-setupGit $ttukms
 
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
