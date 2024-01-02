@@ -3,12 +3,13 @@ $repos = "C:\Repos"
 $personaltools = "$repos\Tools"
 $keymaps = "$repos\QMKKeymaps"
 $autotrader = "$repos\Auto-Trader"
-$ttucsc = "$repos\CSC"
-$ttuhrms = "$repos\HRMS"
-$ttugenetec = "$repos\GenetecAPI"
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 Function trader {Set-Location $autotrader}
+
+$ttucsc = "$repos\CSC"
+$ttuhrms = "$repos\HRMS"
+$ttugenetec = "$repos\GenetecAPI"
 Function csc {Set-Location $ttucsc}
 Function hrms {Set-Location $ttuhrms}
 Function gtec {Set-Location $ttugenetec}
