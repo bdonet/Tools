@@ -89,8 +89,6 @@ Function rc
     git rebase --continue
 }
 
-Function csb {Remove-Item ./Message.xml; Remove-Item ./Properties.xml}
-
 # NuGet package shortcuts
 Function packNuGet {dotnet pack}
 Function publishNuGet($feedName, $packagePath) {dotnet nuget push --interactive --source $feedName --api-key "key" $packagePath}
