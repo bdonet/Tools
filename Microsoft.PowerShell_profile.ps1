@@ -125,8 +125,8 @@ Function rc
 Function searchChildren($pattern) {Get-ChildItem -path "." -Recurse | Select-String -Pattern $pattern}
 
 # NuGet package shortcuts
-Function packNuGet {dotnet pack}
-Function publishNuGet($feedName, $packagePath) {dotnet nuget push --interactive --source $feedName --api-key "key" $packagePath}
+Function nugetPack {dotnet pack}
+Function nugetPublish($packagePath) {nuget push -Source "TexasTechUniversity_OperationsDivision_NugetFeed" -ApiKey "key" $packagePath}
 
 # Improve the git experience in powershell
 Import-Module posh-git
