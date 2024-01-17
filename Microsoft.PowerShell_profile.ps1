@@ -89,6 +89,9 @@ Function rc
     git rebase --continue
 }
 
+# Helpful file search command
+Function searchChildren($pattern) {Get-ChildItem -path "." -Recurse | Select-String -Pattern $pattern}
+
 # NuGet package shortcuts
 Function packNuGet {dotnet pack}
 Function publishNuGet($feedName, $packagePath) {dotnet nuget push --interactive --source $feedName --api-key "key" $packagePath}
