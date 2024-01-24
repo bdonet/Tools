@@ -14,7 +14,7 @@ $ttuutilitybilling = "$repos\UtilitiesBillingApp"
 $ttudesignrepos = "$HOME\OneDrive - Texas Tech University\Design Repos"
 $ttuparser = "$repos\FormulaParser"
 $ttuchemistrylogger = "$repos\ChemistryLogger"
-$ttuauth = "$repos\TTUAuth"
+$ttuauth = "$repos\TTUAuthN"
 $ttuidoffice = "$repos\IDOffice"
 $ttumip = "$repos\odmip"
 $tturesharper = "$HOME\AppData\Roaming\JetBrains\Shared\vAny"
@@ -22,6 +22,7 @@ $ttuswaat = "$repos\swaat"
 $tturideshare = "$repos\RideShareAPI"
 $ttuprojecttracker = "$repos\ODProjectTracker"
 $ttudatabaseadapter = "$repos\DatabaseAdapter"
+$ttuauthhub = "$repos\AuthHub"
 Function csc {Set-Location $ttucsc}
 Function hrms {Set-Location $ttuhrms}
 Function gapi {Set-Location $ttugenetecapi}
@@ -31,7 +32,7 @@ Function billing {Set-Location $ttuutilitybilling}
 Function design {Set-Location $ttudesignrepos}
 Function parser {Set-Location $ttuparser}
 Function chem {Set-Location $ttuchemistrylogger}
-Function auth {Set-Location $ttuauth}
+Function authn {Set-Location $ttuauth}
 Function id {Set-Location $ttuidoffice}
 Function mip {Set-Location $ttumip}
 Function resharper {Set-Location $tturesharper}
@@ -39,6 +40,7 @@ Function swaat {Set-Location $ttuswaat}
 Function rideshare {Set-Location $tturideshare}
 Function tracker {Set-Location $ttuprojecttracker}
 Function dbadapter {Set-Location $ttudatabaseadapter}
+Function auth {Set-Location $ttuauthhub}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
