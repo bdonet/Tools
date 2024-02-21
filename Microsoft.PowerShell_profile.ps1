@@ -22,7 +22,7 @@ $ttuswaat = "$repos\swaat"
 $tturideshare = "$repos\RideShareAPI"
 $ttuprojecttracker = "$repos\ODProjectTracker"
 $ttudatabaseadapter = "$repos\DatabaseAdapter"
-$ttuauthhub = "$repos\AuthHub"
+$ttuauthhub = "$repos\AccessControl"
 Function csc {Set-Location $ttucsc}
 Function hrms {Set-Location $ttuhrms}
 Function gapi {Set-Location $ttugenetecapi}
