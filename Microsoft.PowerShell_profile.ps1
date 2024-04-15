@@ -6,7 +6,6 @@ Function tools {Set-Location $personaltools}
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Community"
 Set-Alias -Name vs -Value $vs\Common7\IDE\devenv.exe
-Set-Alias -Name ssms -Value C:\"Program Files (x86)"\"Microsoft SQL Server Management Studio 18"\Common7\IDE\Ssms.exe
 Set-Alias -Name music -Value $HOME\AppData\Roaming\Spotify\Spotify.exe
 
 # Open the powershell profile in notepad
