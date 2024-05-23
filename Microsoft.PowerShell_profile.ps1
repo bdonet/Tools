@@ -6,26 +6,18 @@ Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 
 $ttucsc = "$repos\CSC"
-$ttugenetecapi = "$repos\GenetecDataAPI"
-$ttutpscitationapp = "$repos\TPSCitationApp"
 $ttukms = "$repos\odkms"
 $ttudesignrepos = "$HOME\OneDrive - Texas Tech University\Design Repos"
-$ttuparser = "$repos\FormulaParser"
 $ttuchemistrylogger = "$repos\ChemistryLogger"
 $ttuauth = "$repos\TTUAuthN"
 $tturesharper = "$HOME\AppData\Roaming\JetBrains\Shared\vAny"
-$tturideshare = "$repos\RideShareAPI"
 $ttuauthhub = "$repos\AccessControl"
 Function csc {Set-Location $ttucsc}
-Function gapi {Set-Location $ttugenetecapi}
-Function tps {Set-Location $ttutpscitationapp}
 Function kms {Set-Location $ttukms}
 Function design {Set-Location $ttudesignrepos}
-Function parser {Set-Location $ttuparser}
 Function chem {Set-Location $ttuchemistrylogger}
 Function authn {Set-Location $ttuauth}
 Function resharper {Set-Location $tturesharper}
-Function rideshare {Set-Location $tturideshare}
 Function auth {Set-Location $ttuauthhub}
 
 # Open various applications
