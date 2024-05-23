@@ -12,6 +12,8 @@ $ttuchemistrylogger = "$repos\ChemistryLogger"
 $ttuauth = "$repos\TTUAuthN"
 $tturesharper = "$HOME\AppData\Roaming\JetBrains\Shared\vAny"
 $ttuauthhub = "$repos\AccessControl"
+$ttucentralapi = "$repos\CentralAPI"
+$ttutaskrunner = "$repos\OperationsTaskRunner"
 Function csc {Set-Location $ttucsc}
 Function kms {Set-Location $ttukms}
 Function design {Set-Location $ttudesignrepos}
@@ -19,6 +21,8 @@ Function chem {Set-Location $ttuchemistrylogger}
 Function authn {Set-Location $ttuauth}
 Function resharper {Set-Location $tturesharper}
 Function auth {Set-Location $ttuauthhub}
+Function capi {Set-Location $ttucentralapi}
+Function tasks {Set-Location $ttutaskrunner}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
