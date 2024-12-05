@@ -32,7 +32,7 @@ Function updateprofile
 }
 
 # Visual Studio utilties
-Set-Alias -name msbuild -Value "$vs\MSBuild\Current\Bin\msbuild.exe"
+Set-Alias -name msbuild -Value "C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\msbuild.exe"
 Set-Alias -name nuget -Value "C:\Program Files (x86)\NuGet\nuget.exe"
 Function build ($solution) {msbuild -nologo -v:q -clp:ErrorsOnly ./$solution}
 Function restore ($solution) {nuget restore -verbosity quiet ./$solution}
