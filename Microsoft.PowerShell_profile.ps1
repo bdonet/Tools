@@ -19,6 +19,7 @@ Function capi {Set-Location "$repos\CentralAPI"}
 Function tasks {Set-Location "$repos\OperationsTaskRunner"}
 Function parking {Set-Location "$repos\InternalParkingWebsite"}
 Function xapi {Set-Location "$repos\ExternalAPI"}
+Function lapi {Set-Location "$repos\LegacyAPI"}
 
 # Open the powershell profile in VS Code
 Function profile {code $personaltools\Microsoft.PowerShell_profile.ps1}
