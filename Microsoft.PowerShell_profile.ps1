@@ -5,28 +5,20 @@ $keymaps = "$repos\QMKKeymaps"
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 
-$ttucsc = "$repos\CSC"
-$ttukms = "$repos\odkms"
 $ttudesignrepos = "$HOME\OneDrive - Texas Tech University\Design Repos"
-$ttuchemistrylogger = "$repos\ChemistryLogger"
-$ttuauth = "$repos\TTUAuthN"
 $tturesharper = "$HOME\AppData\Roaming\JetBrains\Shared\vAny"
-$ttuauthhub = "$repos\AccessControl"
-$ttucentralapi = "$repos\CentralAPI"
-$ttutaskrunner = "$repos\OperationsTaskRunner"
-$ttuparking = "$repos\InternalParkingWebsite"
-$ttuexternalapi = "$repos\ExternalAPI"
-Function csc {Set-Location $ttucsc}
-Function kms {Set-Location $ttukms}
 Function design {Set-Location $ttudesignrepos}
-Function chem {Set-Location $ttuchemistrylogger}
-Function authn {Set-Location $ttuauth}
 Function resharper {Set-Location $tturesharper}
-Function auth {Set-Location $ttuauthhub}
-Function capi {Set-Location $ttucentralapi}
-Function tasks {Set-Location $ttutaskrunner}
-Function parking {Set-Location $ttuparking}
-Function xapi {Set-Location $ttuexternalapi}
+
+Function csc {Set-Location "$repos\CSC"}
+Function kms {Set-Location "$repos\odkms"}
+Function chem {Set-Location "$repos\ChemistryLogger"}
+Function authn {Set-Location "$repos\TTUAuthN"}
+Function auth {Set-Location "$repos\AccessControl"}
+Function capi {Set-Location "$repos\CentralAPI"}
+Function tasks {Set-Location "$repos\OperationsTaskRunner"}
+Function parking {Set-Location "$repos\InternalParkingWebsite"}
+Function xapi {Set-Location "$repos\ExternalAPI"}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
