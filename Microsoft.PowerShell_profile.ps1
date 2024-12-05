@@ -14,6 +14,8 @@ $tturesharper = "$HOME\AppData\Roaming\JetBrains\Shared\vAny"
 $ttuauthhub = "$repos\AccessControl"
 $ttucentralapi = "$repos\CentralAPI"
 $ttutaskrunner = "$repos\OperationsTaskRunner"
+$ttuparking = "$repos\InternalParkingWebsite"
+$ttuexternalapi = "$repos\ExternalAPI"
 Function csc {Set-Location $ttucsc}
 Function kms {Set-Location $ttukms}
 Function design {Set-Location $ttudesignrepos}
@@ -23,6 +25,8 @@ Function resharper {Set-Location $tturesharper}
 Function auth {Set-Location $ttuauthhub}
 Function capi {Set-Location $ttucentralapi}
 Function tasks {Set-Location $ttutaskrunner}
+Function parking {Set-Location $ttuparking}
+Function xapi {Set-Location $ttuexternalapi}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
