@@ -21,5 +21,8 @@ Add-Content -Path $gitConfigFilePath -Value "[commit]
     changed = red bold
     untracked = red bold"
 
+$gitVimrcFilePath = Read-Host -Prompt "Enter the full path of your git vimrc file"
+Add-Content -Path $gitVimrcFilePath -Value "`ncolorscheme torte"
+
 .\Microsoft.PowerShell_profile.ps1
 exit
