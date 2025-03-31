@@ -11,10 +11,12 @@ $ttucsc = "$repos\CSC"
 $ttuhrms = "$repos\HRMS"
 $ttugenetecapi = "$repos\GenetecDataAPI"
 $ttutpscitationapp = "$repos\TPSCitationApp"
+$ttukms = "$repos\odkms"
 Function csc {Set-Location $ttucsc}
 Function hrms {Set-Location $ttuhrms}
 Function gapi {Set-Location $ttugenetecapi}
 Function tps {Set-Location $ttutpscitationapp}
+Function kms {Set-Location $ttukms}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
