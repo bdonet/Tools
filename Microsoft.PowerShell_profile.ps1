@@ -4,10 +4,12 @@ $personaltools = "$repos\Tools"
 $keymaps = "$repos\QMKKeymaps"
 $autotrader = "$repos\Auto-Trader"
 $csc = "$repos\CSC"
+$ttuhrms = "$repos\HRMS"
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 Function trader {Set-Location $autotrader}
 Function csc {Set-Location $csc}
+Function hrms {Set-Location $ttuhrms}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
