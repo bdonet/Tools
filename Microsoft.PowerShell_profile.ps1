@@ -7,11 +7,13 @@ $autotrader = "$repos\Auto-Trader"
 =======
 $personaltools = "C:\Repos\Tools"
 $keymaps = "C:\Repos\QMKKeymaps"
+<<<<<<< HEAD
 $autotrader = "C:\Repos\Auto-Trader"
 >>>>>>> 9853dee (Changed Auto Trader repo location)
+=======
+>>>>>>> 5d4c279 (Removed AutoTrader shortcut)
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
-Function trader {Set-Location $autotrader}
 
 $ttucsc = "$repos\CSC"
 $ttuhrms = "$repos\HRMS"
