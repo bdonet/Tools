@@ -5,11 +5,13 @@ $keymaps = "$repos\QMKKeymaps"
 $autotrader = "$repos\Auto-Trader"
 $ttucsc = "$repos\CSC"
 $ttuhrms = "$repos\HRMS"
+$ttugenetec = "$repos\GenetecAPI"
 Function tools {Set-Location $personaltools}
 Function qmk {Set-Location $keymaps}
 Function trader {Set-Location $autotrader}
 Function csc {Set-Location $ttucsc}
 Function hrms {Set-Location $ttuhrms}
+Function gtec {Set-Location $ttugenetec}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
