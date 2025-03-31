@@ -96,41 +96,8 @@ Function packNuGet {dotnet pack}
 Function publishNuGet($feedName, $packagePath) {dotnet nuget push --interactive --source $feedName --api-key "key" $packagePath}
 
 # Improve the git experience in powershell
-Function colorGit
-{
-    git config color.status.branch "yellow bold"
-    git config color.status.nobranch "magenta bold"
-    git config color.status.unmerged "red bold"
-    git config color.status.added "green bold"
-    git config color.status.changed "red bold"
-    git config color.status.untracked "red bold"
-    git config color.grep.filename "yellow bold"
-    git config color.diff.new "green bold"
-    git config color.diff.old "red bold"
-}
-Function setupGit ($location)
-{
-    Push-Location $location
-    colorGit
-    git config commit.verbose 1
-    Pop-Location
-}
-
-Function setupRepos($location)
-{
-    Push-Location $location
-    $repos = Get-ChildItem -Name
-    foreach ($repo in $repos)
-    {
-        setupGit($repo)
-    }
-    Pop-Location
-}
-
 Import-Module posh-git
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomic.omp.json" | Invoke-Expression
-
-setupRepos $repos
 
 Set-PSReadlineOption -Colors @{ String = '#c69ee6'}
 Set-PSReadlineOption -Colors @{ Parameter = '#9cd1ab'}
