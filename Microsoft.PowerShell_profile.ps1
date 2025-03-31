@@ -16,6 +16,8 @@ $ttuparser = "$repos\FormulaParser"
 $ttuchemistrylogger = "$repos\ChemistryLogger"
 $ttuauth = "$repos\TTUAuth"
 $ttuidoffice = "$repos\IDOffice"
+$ttumip = "$repos\odmip"
+$tturesharper = "$HOME\AppData\Roaming\JetBrains\Shared\vAny"
 Function csc {Set-Location $ttucsc}
 Function hrms {Set-Location $ttuhrms}
 Function gapi {Set-Location $ttugenetecapi}
@@ -27,6 +29,8 @@ Function parser {Set-Location $ttuparser}
 Function chem {Set-Location $ttuchemistrylogger}
 Function auth {Set-Location $ttuauth}
 Function id {Set-Location $ttuidoffice}
+Function mip {Set-Location $ttumip}
+Function resharper {Set-Location $tturesharper}
 
 # Open various applications
 $vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
