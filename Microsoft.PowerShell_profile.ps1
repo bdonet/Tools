@@ -22,6 +22,7 @@ Function xapi {Set-Location "$repos\ExternalAPI"}
 Function lapi {Set-Location "$repos\LegacyAPI"}
 Function public {Set-Location "$repos\PublicWebsite"}
 Function logs {Set-Location "$repos\Logger"}
+Function coms {Set-Location "$repos\MassCommunications"}
 
 # Open the powershell profile in VS Code
 Function profile {code $personaltools\Microsoft.PowerShell_profile.ps1}
