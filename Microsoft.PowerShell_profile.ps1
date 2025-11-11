@@ -12,7 +12,6 @@ Function resharper {Set-Location $tturesharper}
 
 Function csc {Set-Location "$repos\CSC"}
 Function kms {Set-Location "$repos\odkms"}
-Function chem {Set-Location "$repos\ChemistryLogger"}
 Function authn {Set-Location "$repos\TTUAuthN"}
 Function auth {Set-Location "$repos\AccessControl"}
 Function capi {Set-Location "$repos\CentralAPI"}
