@@ -20,12 +20,6 @@ Function tasks {Set-Location "$repos\OperationsTaskRunner"}
 Function parking {Set-Location "$repos\InternalParkingWebsite"}
 Function xapi {Set-Location "$repos\ExternalAPI"}
 
-# Open various applications
-$vs = "C:\Program Files\Microsoft Visual Studio\2022\Professional"
-Set-Alias -Name vs -Value $vs\Common7\IDE\devenv.exe
-Set-Alias -Name vs2019 -Value "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe"
-Set-Alias -Name music -Value $HOME\AppData\Roaming\Spotify\Spotify.exe
-
 # Open the powershell profile in VS Code
 Function profile {code $personaltools\Microsoft.PowerShell_profile.ps1}
 
