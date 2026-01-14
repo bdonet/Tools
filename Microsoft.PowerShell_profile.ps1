@@ -8,7 +8,7 @@ $vs = "C:\Program Files\Microsoft Visual Studio\2022\Community"
 Set-Alias -Name vs -Value $vs\Common7\IDE\devenv.exe
 Set-Alias -Name music -Value $HOME\AppData\Roaming\Spotify\Spotify.exe
 
-# Open the powershell profile in notepad
+# Open the powershell profile in VS Code
 Function profile {code $personaltools\Microsoft.PowerShell_profile.ps1}
 
 # Copy the profile from tools into Powershell 5 and 7 profile directories
@@ -18,10 +18,9 @@ Function updateprofile
     Copy-Item $personaltools\Microsoft.PowerShell_profile.ps1 -Destination "$HOME\Documents\PowerShell";
 }
 
-# Visual Studio utilties
-Set-Alias -name msbuild -Value "$vs\MSBuild\Current\Bin\msbuild.exe"
+# Solution utilties
 Set-Alias -name nuget -Value "C:\Program Files (x86)\NuGet\nuget.exe"
-Function build ($solution) {msbuild -nologo -v:q -clp:ErrorsOnly ./$solution}
+Function build ($solution) {dotnet build -clp:ErrorsOnly ./$solution}
 Function restore ($solution) {nuget restore -verbosity quiet ./$solution}
 Function test ($solution) {dotnet test -v q --nologo --no-build --filter Tests.Unit ./$solution}
 Function buildall
